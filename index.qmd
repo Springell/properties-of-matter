@@ -1,0 +1,17 @@
+# Welcome
+
+Welcome to the Properties of Matter course at the
+University of Bristol.
+
+This online textbook introduces the fundamental
+physical principles governing solids, liquids
+and gases.
+
+## Course topics
+
+- Thermodynamics
+- Properties of solids
+- Properties of liquids
+- Atomic bonding and crystal structures
+
+Use the navigation menu to explore the chapters.

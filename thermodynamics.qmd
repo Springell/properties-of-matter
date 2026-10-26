@@ -1,0 +1,29 @@
+# Introduction to Thermodynamics
+
+Thermodynamics describes the relationships between
+heat, work, temperature and internal energy.
+
+## The First Law of Thermodynamics
+
+The first law expresses conservation of energy:
+
+$$
+\Delta U = Q - W
+$$
+
+where:
+
+- $U$ is the internal energy.
+- $Q$ is heat transferred into the system.
+- $W$ is work done by the system.
+
+## Worked Example
+
+A gas absorbs 500 J of heat and performs
+200 J of work.
+
+The change in internal energy is:
+
+$$
+\Delta U = 500 - 200 = 300\ \mathrm{J}
+$$
