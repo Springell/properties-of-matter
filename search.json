@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Properties of Matter",
+    "section": "",
+    "text": "1 Welcome\nWelcome to the Properties of Matter course at the University of Bristol.\nThis online textbook introduces the fundamental physical principles governing solids, liquids and gases.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#course-topics",
+    "href": "index.html#course-topics",
+    "title": "Properties of Matter",
+    "section": "1.1 Course topics",
+    "text": "1.1 Course topics\n\nThermodynamics\nProperties of solids\nProperties of liquids\nAtomic bonding and crystal structures\n\nUse the navigation menu to explore the chapters.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+    ]
+  },
+  {
+    "objectID": "thermodynamics.html",
+    "href": "thermodynamics.html",
+    "title": "2  Introduction to Thermodynamics",
+    "section": "",
+    "text": "2.1 The First Law of Thermodynamics\nThermodynamics describes the relationships between heat, work, temperature and internal energy.\nThe first law expresses conservation of energy:\n\\[\n\\Delta U = Q - W\n\\]\nwhere:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Thermodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "thermodynamics.html#the-first-law-of-thermodynamics",
+    "href": "thermodynamics.html#the-first-law-of-thermodynamics",
+    "title": "2  Introduction to Thermodynamics",
+    "section": "",
+    "text": "\\(U\\) is the internal energy.\n\\(Q\\) is heat transferred into the system.\n\\(W\\) is work done by the system.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Thermodynamics</span>"
+    ]
+  },
+  {
+    "objectID": "thermodynamics.html#worked-example",
+    "href": "thermodynamics.html#worked-example",
+    "title": "2  Introduction to Thermodynamics",
+    "section": "2.2 Worked Example",
+    "text": "2.2 Worked Example\nA gas absorbs 500 J of heat and performs 200 J of work.\nThe change in internal energy is:\n\\[\n\\Delta U = 500 - 200 = 300\\ \\mathrm{J}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Thermodynamics</span>"
+    ]
+  }
+]
