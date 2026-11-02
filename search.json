@@ -4,49 +4,289 @@
     "href": "index.html",
     "title": "Properties of Matter",
     "section": "",
-    "text": "1 Welcome\nWelcome to the Properties of Matter course at the University of Bristol.\nThis online textbook introduces the fundamental physical principles governing solids, liquids and gases.",
+    "text": "Welcome\nProperties of Matter is an introduction to how the structure and interactions of atoms and molecules give rise to the properties of the materials around us. It is designed to accompany the first-year physics course at the University of Bristol.\nWhy does a gas exert pressure? Why do liquids flow while solids retain their shape? What sets the spacing between atoms in a crystal, and why do materials expand, conduct heat or change phase? These questions connect microscopic physics to observations we can make in the laboratory and everyday life.\nThe central idea of this book is that macroscopic behaviour emerges from microscopic structure, motion and interactions. We will use simple models, careful approximations and quantitative reasoning to build that connection.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "Welcome"
     ]
   },
   {
-    "objectID": "index.html#course-topics",
-    "href": "index.html#course-topics",
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
     "title": "Properties of Matter",
-    "section": "1.1 Course topics",
-    "text": "1.1 Course topics\n\nThermodynamics\nProperties of solids\nProperties of liquids\nAtomic bonding and crystal structures\n\nUse the navigation menu to explore the chapters.",
+    "section": "How to use this book",
+    "text": "How to use this book\nEach chapter develops the physical ideas before introducing the equations used to describe them. Worked examples show how to turn the theory into calculations; figures illustrate the underlying mechanisms; and practice questions let you check your understanding.\nAs you read, aim to:\n\nExplain the physics: describe what an equation means, not just how to rearrange it.\nFollow the assumptions: identify when a model is useful and when its approximations break down.\nWork through derivations: reproduce key steps with pen and paper before looking at the result.\nCheck your answers: use units, limiting cases and orders of magnitude to test whether a calculation is sensible.\n\nSome sections include additional material that extends beyond the core ideas. These are identified where relevant. The course lectures, problem classes and official assessment guidance remain the authority on what is examinable.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
+      "Welcome"
     ]
   },
   {
-    "objectID": "thermodynamics.html",
-    "href": "thermodynamics.html",
-    "title": "2  Introduction to Thermodynamics",
+    "objectID": "index.html#begin-reading",
+    "href": "index.html#begin-reading",
+    "title": "Properties of Matter",
+    "section": "Begin reading",
+    "text": "Begin reading\nChapter 1 — Atoms and the Structure of Matter introduces atomic structure, mass and length scales, and the usefulness and limitations of approximate models. It also provides an introduction to nuclear binding energy and the semi-empirical mass formula.\nChapter 2 — Atomic and Molecular Bonding explains why atoms attract and repel, how interatomic potentials determine equilibrium separations and vibrations, and how bonding relates to the properties of matter.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#the-wider-course",
+    "href": "index.html#the-wider-course",
+    "title": "Properties of Matter",
+    "section": "The wider course",
+    "text": "The wider course\nThe full course goes on to ideal and real gases, kinetic theory, the laws of thermodynamics, liquids and interfaces, and the structure and mechanical properties of solids. The book will grow to cover these topics as additional chapters are completed.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#about-these-notes",
+    "href": "index.html#about-these-notes",
+    "title": "Properties of Matter",
+    "section": "About these notes",
+    "text": "About these notes\nThese notes have been developed from the the lecture slides, written workings from the blackboard and the problems classes, with additional original explanations, examples and figures. They are intended as a learning resource rather than a verbatim lecture transcript. This is the first time that I have used detailed notes like this so there may be the odd error or formatting issue, please let me know via Teams or email (phrss@bristol.ac.uk).",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html",
+    "href": "chapter-01-atoms.html",
+    "title": "1  Atoms and the Structure of Matter",
     "section": "",
-    "text": "2.1 The First Law of Thermodynamics\nThermodynamics describes the relationships between heat, work, temperature and internal energy.\nThe first law expresses conservation of energy:\n\\[\n\\Delta U = Q - W\n\\]\nwhere:",
+    "text": "1.1 Why study the properties of matter?\nThe behaviour of an everyday object emerges from the collective behaviour of an enormous number of atoms. Newtonian mechanics is a powerful description of a small number of bodies, but following every atom in a macroscopic sample is neither practical nor necessary. In this course we connect a microscopic picture—atoms, their energies and their interactions—to macroscopic properties such as temperature, pressure and elasticity.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Thermodynamics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
     ]
   },
   {
-    "objectID": "thermodynamics.html#the-first-law-of-thermodynamics",
-    "href": "thermodynamics.html#the-first-law-of-thermodynamics",
-    "title": "2  Introduction to Thermodynamics",
+    "objectID": "chapter-01-atoms.html#why-study-the-properties-of-matter",
+    "href": "chapter-01-atoms.html#why-study-the-properties-of-matter",
+    "title": "1  Atoms and the Structure of Matter",
     "section": "",
-    "text": "\\(U\\) is the internal energy.\n\\(Q\\) is heat transferred into the system.\n\\(W\\) is work done by the system.",
+    "text": "NoteFrom the lecture\n\n\n\nThis chapter follows Lecture 1, Introduction and ‘Atomos’. Its purpose is partly to establish the scale of atoms and to practise making useful estimates. Detailed interatomic forces begin in Chapter 2.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Thermodynamics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
     ]
   },
   {
-    "objectID": "thermodynamics.html#worked-example",
-    "href": "thermodynamics.html#worked-example",
-    "title": "2  Introduction to Thermodynamics",
-    "section": "2.2 Worked Example",
-    "text": "2.2 Worked Example\nA gas absorbs 500 J of heat and performs 200 J of work.\nThe change in internal energy is:\n\\[\n\\Delta U = 500 - 200 = 300\\ \\mathrm{J}\n\\]",
+    "objectID": "chapter-01-atoms.html#what-is-an-atom",
+    "href": "chapter-01-atoms.html#what-is-an-atom",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.2 What is an atom?",
+    "text": "1.2 What is an atom?\nAn atom has a nucleus containing protons and neutrons, surrounded by electrons. The atomic number \\(Z\\) is the number of protons; the mass number \\(A\\) is the total number of nucleons. An isotope is specified using\n\\[\n{}^{A}_{Z}\\mathrm{X},\\qquad N=A-Z,\n\\]\nwhere \\(N\\) is the neutron number. For example, uranium-238 is \\({}^{238}_{92}\\mathrm{U}\\) and has 146 neutrons. Isotopes of one element have the same \\(Z\\) but different \\(N\\).\nThe simple geometrical picture in Figure 1.1 shows the meaning of the diameter \\(2R\\) used in the Lecture 1 atomic-size estimate. The diagram is adapted from the PowerPoint arrow and spacing annotation rather than reproducing an image of uncertain provenance.\n\n\n\n\n\n\nFigure 1.1: Two neighbouring atoms and the approximate centre-to-centre spacing \\(2R\\) in a simplified packing model.\n\n\n\n\n1.2.1 Atomic notation and the scale of the nucleus\nThe chemical symbol determines the element because it specifies \\(Z\\). A neutral atom contains \\(Z\\) electrons, but a positive ion has fewer electrons than protons. Do not confuse mass number \\(A\\) with atomic mass: \\(A\\) is an integer count, while isotopic masses in u are measured quantities and need not be integers. Figure 1.2 illustrates the notation used throughout the chapter.\n\n\n\n\n\n\nFigure 1.2: Notation for chemical elements and isotopes.\n\n\n\nAn atomic radius is typically of order \\(10^{-10}\\,\\mathrm{m}\\); nuclear dimensions are of order \\(10^{-15}\\,\\mathrm{m}\\). The nucleus occupies a tiny fraction of the atom’s volume, although it contains nearly all of its mass. The atomic-size estimate below uses macroscopic density rather than assuming we can see individual atoms.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction to Thermodynamics</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html#atomic-masses-and-isotopic-abundance",
+    "href": "chapter-01-atoms.html#atomic-masses-and-isotopic-abundance",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.3 Atomic masses and isotopic abundance",
+    "text": "1.3 Atomic masses and isotopic abundance\nThe unified atomic mass unit, \\(\\mathrm{u}\\) (also called the dalton, Da), is defined as one twelfth of the mass of a neutral carbon-12 atom in its ground state. To three significant figures,\n\\[\n1\\,\\mathrm{u}\\approx 1.66\\times10^{-27}\\,\\mathrm{kg}.\n\\]\nThe relative atomic mass of an element is an isotope-abundance-weighted mean, rather than necessarily an integer.\n\n\n\n\n\n\nTipWorked example: a simplified carbon abundance calculation\n\n\n\nSuppose a sample contains only carbon-12 and carbon-13, with fractions \\(1-f\\) and \\(f\\), and approximate their isotopic masses by 12 and 13 u. If its relative atomic mass is 12.011, then\n\\[\n12(1-f)+13f=12.011\\quad\\Rightarrow\\quad f=0.011.\n\\]\nThus the simplified model estimates 1.1% carbon-13. Actual isotopic masses are not exact integers and trace carbon-14 can exist; this is an intentionally approximate introductory calculation.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html#the-mole-and-the-number-of-atoms",
+    "href": "chapter-01-atoms.html#the-mole-and-the-number-of-atoms",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.4 The mole and the number of atoms",
+    "text": "1.4 The mole and the number of atoms\nOne mole contains exactly\n\\[\nN_\\mathrm{A}=6.02214076\\times10^{23}\\,\\mathrm{mol^{-1}}\n\\]\nspecified elementary entities. For a pure element of molar mass \\(M\\), the number of atoms in a sample of mass \\(m\\) is\n\\[\nN=\\frac{m}{M}N_\\mathrm{A}.\n\\]\n\n\n\n\n\n\nTipWorked example: atoms in one kilogram of uranium-238\n\n\n\nTaking \\(M\\approx238\\,\\mathrm{g\\,mol^{-1}}\\),\n\\[\nN=\\frac{1000\\,\\mathrm{g}}{238\\,\\mathrm{g\\,mol^{-1}}}\\times 6.022\\times10^{23}\\,\\mathrm{mol^{-1}}\n\\approx2.53\\times10^{24}\\ \\text{atoms}.\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html#estimating-the-size-of-an-atom-from-density",
+    "href": "chapter-01-atoms.html#estimating-the-size-of-an-atom-from-density",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.5 Estimating the size of an atom from density",
+    "text": "1.5 Estimating the size of an atom from density\nDensity gives a route from a macroscopic measurement to an atomic length scale. If the density is \\(\\rho\\) and the molar mass is \\(M\\), the average volume per atom is\n\\[\nV_\\mathrm{atom}=\\frac{M}{\\rho N_\\mathrm{A}}.\n\\]\nIn the deliberately simple model used in Lecture 1, each atom occupies a cubic cell of side \\(2R\\). Thus\n\\[\n(2R)^3=\\frac{M}{\\rho N_\\mathrm{A}},\\qquad\nR=\\frac12\\left(\\frac{M}{\\rho N_\\mathrm{A}}\\right)^{1/3}.\n\\]\nFor uranium with \\(M=238\\,\\mathrm{g\\,mol^{-1}}\\) and \\(\\rho=19\\,\\mathrm{g\\,cm^{-3}}\\),\n\\[\nR\\approx1.38\\times10^{-8}\\,\\mathrm{cm}=1.38\\,\\text{\\AA}=0.138\\,\\mathrm{nm}.\n\\]\nThis is an effective radius within a simple-cubic volume model, not a measured metallic or crystallographic radius of uranium. Real uranium has a more complex crystal structure; the value illustrates the atomic length scale rather than an exact structural measurement.\n\n1.5.1 Geometrical assumptions in atomic packing\nFigure 1.3 is a useful visual reminder that atoms do not literally occupy isolated cubic boxes. The packing geometry and coordination determine how a measured density relates to a nearest-neighbour distance. The cube model gives an order-of-magnitude estimate, not a structure determination.\n\n\n\n\n\n\nFigure 1.3: Atomic packing schematic used to illustrate the geometrical assumptions in estimating atomic dimensions.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html#why-approximate-models-are-useful",
+    "href": "chapter-01-atoms.html#why-approximate-models-are-useful",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.6 Why approximate models are useful",
+    "text": "1.6 Why approximate models are useful\nThe density estimate is useful even though its geometric assumption is unrealistic. It gives the correct order of magnitude, makes the assumptions visible, and can be improved when more structural information is available. Throughout this book we will distinguish between a model’s predictions and the physical properties actually measured.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html#practice-problems",
+    "href": "chapter-01-atoms.html#practice-problems",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.7 Practice problems",
+    "text": "1.7 Practice problems\n\nHow many neutrons are present in \\({}^{13}_{6}\\mathrm{C}\\) and \\({}^{238}_{92}\\mathrm{U}\\)?\nEstimate the number of atoms in a 5.0 g sample of pure carbon-12.\nIf a material has molar mass \\(60\\,\\mathrm{g\\,mol^{-1}}\\) and density \\(6.0\\,\\mathrm{g\\,cm^{-3}}\\), estimate the effective radius using the same cubic-cell approximation.\n\n\n\n\n\n\n\nNoteSolutions\n\n\n\n\n\n\nCarbon-13 has 7 neutrons; uranium-238 has 146.\n\\(N=(5.0/12.0)N_\\mathrm{A}\\approx2.51\\times10^{23}\\) atoms.\n\\(R=\\tfrac12[60/(6.0N_\\mathrm{A})]^{1/3}\\,\\mathrm{cm}\\approx1.28\\times10^{-8}\\,\\mathrm{cm}=0.128\\,\\mathrm{nm}\\).",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-01-atoms.html#sec-semf",
+    "href": "chapter-01-atoms.html#sec-semf",
+    "title": "1  Atoms and the Structure of Matter",
+    "section": "1.8 Appendix: the semi-empirical mass formula",
+    "text": "1.8 Appendix: the semi-empirical mass formula\nThis is the optional extension in Lecture 1, not a prerequisite for the later bonding chapter. It demonstrates how a simple model with physically motivated corrections can capture a broad trend, while failing when its assumptions are violated.\n\n\n\n\n\n\nFigure 1.4: Schematic illustrations of the five terms in the semi-empirical mass formula.\n\n\n\nLecture 1 includes the semi-empirical mass formula (SEMF) as an example of the predictive power of approximate physical models. A common form of the nuclear binding-energy model is\n\\[\nB(A,Z)=a_v A-a_s A^{2/3}-a_c\\frac{Z(Z-1)}{A^{1/3}}-a_a\\frac{(A-2Z)^2}{A}+\\delta(A,Z).\n\\]\nThe terms represent, respectively, a volume contribution, surface correction, Coulomb repulsion, neutron–proton asymmetry and pairing. The coefficients depend on the chosen fit and convention; numerical values should be taken from the specific version used in the lecture before reproducing numerical predictions.\nAt fixed \\(A\\), a simplified estimate of the most favourable proton number can be found by maximising \\(B(A,Z)\\) with respect to \\(Z\\) (ignoring pairing and using \\(Z^2\\) in the Coulomb term). Differentiation gives\n\\[\n-\\frac{2a_c Z}{A^{1/3}}+\\frac{4a_a(A-2Z)}{A}=0,\n\\]\nand hence\n\\[\nZ\\approx\\frac{A}{2+(a_c/2a_a)A^{2/3}}.\n\\]\nThis shows why the preferred neutron-to-proton ratio increases for heavier nuclei. This appendix is an enrichment model, not a substitute for a full treatment of nuclear stability; whether its derivation is examinable should be checked against the intended learning outcomes.\n\n1.8.1 Units, mass defect and the meaning of binding energy\nEvery coefficient \\(a_v,a_s,a_c,a_a\\) and the pairing coefficient has units of energy (usually MeV), because \\(A\\), \\(Z\\) and \\(N\\) are dimensionless counts. In the common convention\n\\[\n\\delta(A,Z)=\\begin{cases}\n+a_p A^{-1/2},& Z,N\\text{ both even},\\\\\n0,&A\\text{ odd},\\\\\n-a_p A^{-1/2},& Z,N\\text{ both odd},\n\\end{cases}\n\\]\nthe coefficient \\(a_p\\) is also measured in MeV. Other fitted versions use different exponents and coefficient values; these conventions must not be mixed.\nThe binding energy is the energy required to separate the nucleus into free nucleons. Its mass defect is\n\\[\n\\Delta m=Zm_p+(A-Z)m_n-M_{\\mathrm{nucleus}},\\qquad B=\\Delta m c^2.\n\\]\nThus the rest mass of the nucleus is the sum of the free nucleon rest masses minus the mass equivalent of its binding energy, not minus an energy directly. When nucleons bind, the released energy must be carried away (for example by radiation and recoil); energy is conserved for the complete system.\n\n\n1.8.2 Why the model predicts neutron-rich heavy nuclei\nThe handwritten Lecture 1 derivation maximises \\(B\\) at fixed \\(A\\), treating \\(Z\\) as continuous, neglecting pairing and approximating \\(Z(Z-1)\\simeq Z^2\\):\n\\[\n\\frac{\\partial B}{\\partial Z}=-\\frac{2a_cZ}{A^{1/3}}+\\frac{4a_a(A-2Z)}{A}=0.\n\\]\nRearranging gives\n\\[\n\\frac{N-Z}{Z}=\\frac{a_c}{2a_a}A^{2/3},\\qquad\n\\boxed{\\frac NZ\\simeq1+\\frac{a_c}{2a_a}A^{2/3}}.\n\\]\nThe result is an approximate line of beta stability, not an exact prediction for each isotope. The equivalent expression for \\(Z\\) is given above. It explains qualitatively why Coulomb repulsion favours a larger neutron excess as nuclei become heavier.\n\n\n\n\n\n\nFigure 1.5: Schematic chart of nuclides with decay-mode colours; useful for seeing the broad variation in proton and neutron numbers. This is a course illustration rather than a validated nuclide-by-nuclide nuclear database.\n\n\n\n\n\n1.8.3 Where the liquid-drop model fails\nFor \\(A=1\\), a single free proton or neutron has zero nuclear binding energy, yet the SEMF can give a nonzero or negative result. It is therefore not applicable to an isolated nucleon. It is also less accurate for very light nuclei, for which shell structure, few-body correlations and surface effects matter strongly. Do not extrapolate a fitted macroscopic model beyond its domain of validity.\n\n\n\n\n\n\nImportantA limitation of the approximation\n\n\n\nMaximising the binding energy at fixed \\(A\\) is not quite the same as minimising the atomic mass: the proton–neutron rest-mass difference and the electrons also contribute. The expression above is intended to describe the broad trend, not to locate each stable isotope exactly.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Atoms and the Structure of Matter</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html",
+    "href": "chapter-02-bonding.html",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "",
+    "text": "2.1 Learning outcomes\nAfter studying this chapter, you should be able to:\nThis chapter follows the main sequence of Lectures 2 and 3, with the bonding recap and Madelung material from Lecture 4. Lecture 4’s transition to temperature and the ideal gas law belongs in Chapter 3.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#learning-outcomes",
+    "href": "chapter-02-bonding.html#learning-outcomes",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "",
+    "text": "distinguish solids, liquids and gases using compressibility, rigidity, viscosity and the observation timescale;\nexplain why electromagnetic interactions dominate ordinary interatomic bonding;\nrelate interatomic force to potential energy, and obtain equilibrium separation and a small-displacement spring constant;\ndifferentiate and interpret the Lennard–Jones potential;\nrelate a molar latent heat approximately to the energy of an individual intermolecular bond;\ndescribe dispersion, ionic, covalent and metallic bonding, including their different physical origins;\nexplain the Madelung constant and construct a simple ionic-crystal energy model.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#states-of-matter-a-useful-description-not-an-absolute-classification",
+    "href": "chapter-02-bonding.html#states-of-matter-a-useful-description-not-an-absolute-classification",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.2 States of matter: a useful description, not an absolute classification",
+    "text": "2.2 States of matter: a useful description, not an absolute classification\nA gas is readily compressed and offers little resistance to shear. A solid usually resists changes of shape, while a liquid flows but is comparatively difficult to compress. Real materials are less tidy: glasses, gels, glues and polymers can respond as solids over short times and flow over sufficiently long times. Therefore a description of a state of matter should also specify the timescale of the observation.\n\n\n\n\n\n\n\n\n\nProperty\nTypical solid\nTypical liquid\nTypical gas\n\n\n\n\nCompressibility\nLow\nLow\nHigh\n\n\nAbility to sustain shear\nUsually high\nNot at equilibrium\nNot at equilibrium\n\n\nFlow\nUsually slow\nYes\nYes\n\n\nMicroscopic picture\nNeighbours remain near preferred positions\nNeighbours change over time\nMolecules move between collisions\n\n\n\nFigure 2.1 gives a visual representation of the different phases. Plasma and quantum condensates are included for context, but the mechanical comparisons below concentrate on solids, liquids and gases.\n\n\n\n\n\n\nFigure 2.1: Schematic representations of phases of matter, including plasma and a quantum condensate.\n\n\n\nThe microscopic distinction leads to the central question of this chapter: what holds neighbouring atoms or molecules together, and what prevents them collapsing into one another?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#attractive-and-repulsive-interactions",
+    "href": "chapter-02-bonding.html#attractive-and-repulsive-interactions",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.3 Attractive and repulsive interactions",
+    "text": "2.3 Attractive and repulsive interactions\nThe sketches in Figure 2.2 and Figure 2.3 illustrate the interaction between two atoms and the competing directions of the force.\n\n\n\n\n\n\nFigure 2.2: Schematic directions of forces acting between atoms.\n\n\n\n\n\n\n\n\n\nFigure 2.3: Complementary force schematic from the course figure collection.\n\n\n\nThe Origin plot in Figure 2.4 illustrates how different attractive contributions vary with separation. Compare their distance dependence before examining the net force between atoms.\n\n\n\n\n\n\nFigure 2.4: Distance dependence of attractive interactions, reproduced from the course Origin graph.\n\n\n\nFor two atoms separated by a distance \\(r\\), let \\(V(r)\\) denote their interaction potential energy. The radial force is\n\\[\nF_r(r)=-\\frac{\\mathrm{d}V}{\\mathrm{d}r}.\n\\]\nA negative force is attractive (towards decreasing \\(r\\)), whereas a positive force is repulsive. At an equilibrium separation \\(r_0\\),\n\\[\n\\left.\\frac{\\mathrm{d}V}{\\mathrm{d}r}\\right|_{r_0}=0.\n\\]\nA stable equilibrium additionally requires \\(V''(r_0)&gt;0\\). In an ordinary interatomic potential, the energy increases sharply if atoms approach too closely, falls to a negative minimum at a preferred spacing, and approaches zero as they are separated very far apart.\n\n2.3.1 Why electromagnetic forces dominate\nGravity is extremely weak between atoms. The strong and weak nuclear interactions act over nuclear or subnuclear distances, not the typical spacing between separate atoms. Electrostatic interactions between nuclei and electrons, together with quantum-mechanical restrictions on electronic states, therefore control ordinary chemical bonding. The very steep short-range repulsion is often described in terms of overlap of electron clouds and the Pauli exclusion principle; it should not be confused with the strong nuclear force.\n\n\n2.3.2 Small oscillations and Hooke’s law\nWrite a small displacement from equilibrium as \\(x=r-r_0\\). Taylor expansion gives\n\\[\nV(r_0+x)=V(r_0)+V'(r_0)x+\\frac12V''(r_0)x^2+\\cdots.\n\\]\nSince \\(V'(r_0)=0\\), to second order\n\\[\nV(r_0+x)\\simeq V(r_0)+\\frac12 k_{\\mathrm{eff}}x^2,\n\\qquad k_{\\mathrm{eff}}=V''(r_0).\n\\]\nDifferentiating yields \\(F\\simeq-k_{\\mathrm{eff}}x\\): Hooke’s law emerges as the local approximation to a more general atomic potential. For two free atoms, their relative vibration has angular frequency \\(\\omega=\\sqrt{k_{\\mathrm{eff}}/\\mu}\\), where \\(\\mu=m_1m_2/(m_1+m_2)\\) is the reduced mass. The harmonic approximation breaks down for sufficiently large displacements because real potentials are asymmetric.\nThe force and energy sketches in Figure 2.5 introduce the equilibrium separation before we work through the mathematical model.\n\n\n\n\n\n\nFigure 2.5: Equilibrium separation between two interacting atoms.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#the-lennardjones-potential",
+    "href": "chapter-02-bonding.html#the-lennardjones-potential",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.4 The Lennard–Jones potential",
+    "text": "2.4 The Lennard–Jones potential\nA useful model for interactions between neutral atoms, particularly noble gases, is\n\\[\nV(r)=4\\varepsilon\\left[\\left(\\frac{\\sigma}{r}\\right)^{12}-\\left(\\frac{\\sigma}{r}\\right)^6\\right]. \\tag{2.1}\n\\]\nHere \\(\\varepsilon&gt;0\\) is the well depth and \\(\\sigma\\) is the separation at which the potential crosses zero. Some of your problem sheets call this zero-crossing distance \\(a\\), rather than \\(\\sigma\\); both conventions describe the same parameter in this equation.\nThe \\(r^{-6}\\) term represents an attractive dispersion interaction, while the \\(r^{-12}\\) term is a convenient empirical representation of short-range repulsion. Neither exponent should be mistaken for a universal exact law of atomic repulsion.\n\n2.4.1 Deriving the equilibrium separation\nDifferentiate Equation (2.1):\n\\[\n\\frac{\\mathrm{d}V}{\\mathrm{d}r}=4\\varepsilon\\left[-\\frac{12\\sigma^{12}}{r^{13}}+\\frac{6\\sigma^6}{r^7}\\right].\n\\]\nAt the minimum, set the derivative to zero:\n\\[\n\\frac{12\\sigma^{12}}{r_0^{13}}=\\frac{6\\sigma^6}{r_0^7}\n\\quad\\Longrightarrow\\quad r_0^6=2\\sigma^6.\n\\]\nTherefore,\n\\[\n\\boxed{r_0=2^{1/6}\\sigma\\simeq1.122\\sigma.}\n\\]\nSubstituting \\(r_0\\) back into the potential gives\n\\[\nV(r_0)=4\\varepsilon\\left[\\frac14-\\frac12\\right]=\\boxed{-\\varepsilon}.\n\\]\nThe energy required to separate an isolated pair from the bottom of the well to infinite distance is thus \\(\\varepsilon\\).\n\n\n2.4.2 Force and stiffness\nDifferentiation also gives the radial force:\n\\[\nF_r(r)=\\frac{24\\varepsilon}{r}\\left[2\\left(\\frac{\\sigma}{r}\\right)^{12}-\\left(\\frac{\\sigma}{r}\\right)^6\\right].\n\\]\nFor \\(r&lt;r_0\\) this is positive (repulsive), and for \\(r&gt;r_0\\) it is negative (attractive). A second derivative evaluated at the minimum yields\n\\[\n\\boxed{k_{\\mathrm{eff}}=V''(r_0)=\\frac{72\\varepsilon}{r_0^2}.}\n\\]\nThis last result connects the depth and width of an atomic potential to the stiffness of small vibrations.\nThe potential-energy and force curves are shown together in Figure 2.6. The potential minimum corresponds to zero force; on either side, the slope of the potential determines the direction of the force. Note that the plotted axes and normalisation follow the original Origin export.\n\n\n\n\n\n\nFigure 2.6: Lennard–Jones potential energy and associated interatomic force, from the original course Origin figure.\n\n\n\n\n\n2.4.3 From the general force law to a potential well\nThe Lecture 2 handwritten working starts from a general repulsive-minus-attractive force law. To keep the dimensions transparent, write it as\n\\[\nF(r)=C\\left[\\left(\\frac{a_0}{r}\\right)^m-\\left(\\frac{a_0}{r}\\right)^n\\right],\\qquad m&gt;n&gt;1,\n\\]\nwhere \\(C\\) has units of force and \\(a_0\\) is the equilibrium separation. The force is zero at \\(r=a_0\\). Since \\(F=-\\mathrm dV/\\mathrm dr\\) and \\(V(\\infty)=0\\),\n\\[\nV(r)=Ca_0\\left[\\frac{(a_0/r)^{m-1}}{m-1}-\\frac{(a_0/r)^{n-1}}{n-1}\\right].\n\\]\nFor \\(m=13\\) and \\(n=7\\) this has the Lennard–Jones powers \\(r^{-12}\\) and \\(r^{-6}\\). Importantly, \\(a_0\\) here is not the LJ zero-crossing parameter \\(\\sigma\\): \\(a_0=2^{1/6}\\sigma\\).\nDifferentiating the force and evaluating at equilibrium gives\n\\[\n\\left.\\frac{\\mathrm dF}{\\mathrm dr}\\right|_{a_0}=-\\frac{C(m-n)}{a_0},\\qquad\nF(a_0+x)\\simeq-\\underbrace{\\frac{C(m-n)}{a_0}}_{k_{\\mathrm{eff}}}x.\n\\]\nThis makes the spring constant in Hooke’s law explicit and corrects the prefactor normalisation that can otherwise be obscured when switching between the different \\(A\\), \\(a_0\\) and \\(\\varepsilon\\) conventions in the handwritten working.\n\n\n\n\n\n\nFigure 2.7: Instantaneous and induced dipoles in neighbouring atoms, illustrating London dispersion forces.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#dispersion-forces-molecular-adhesion-and-noble-gases",
+    "href": "chapter-02-bonding.html#dispersion-forces-molecular-adhesion-and-noble-gases",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.5 Dispersion forces, molecular adhesion and noble gases",
+    "text": "2.5 Dispersion forces, molecular adhesion and noble gases\nEven electrically neutral atoms can attract one another. Fluctuations in their electronic charge distributions induce correlated dipoles, producing London dispersion forces. Permanent dipoles and hydrogen bonding can also contribute to molecular cohesion, but these are distinct mechanisms and should not all be identified with the Lennard–Jones model.\nDispersion forces help explain why noble gases condense at sufficiently low temperatures and why many small contacts can generate substantial adhesion. Your lecture uses the example of gecko-inspired adhesive surfaces, whose many fine contacts exploit weak surface interactions collectively. The important lesson is that weak interactions can become significant when repeated over a very large contact area.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#binding-energies-and-latent-heat",
+    "href": "chapter-02-bonding.html#binding-energies-and-latent-heat",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.6 Binding energies and latent heat",
+    "text": "2.6 Binding energies and latent heat\nA substance can absorb energy during a phase transition without an accompanying rise in temperature. The energy per mole required for a phase change is its molar latent heat (more precisely, an enthalpy change at constant pressure). Evaporation separates molecules that were interacting with neighbours in the liquid.\nSuppose each molecule has approximately \\(z\\) neighbours and each neighbour pair contributes an energy \\(-\\varepsilon\\). Counting every bond once rather than twice gives an approximate cohesive energy per molecule of \\(z\\varepsilon/2\\). For one mole,\n\\[\nL_{\\mathrm{vap}}\\approx\\frac{zN_A\\varepsilon}{2},\n\\qquad\\boxed{\\varepsilon\\approx\\frac{2L_{\\mathrm{vap}}}{zN_A}}. \\tag{2.2}\n\\]\nThis is the nearest-neighbour estimate used in your problem class, not an exact equality: liquid and vapour structures, non-nearest-neighbour interactions, thermal energy and \\(pV\\) effects can alter the result.\n\n\n\n\n\n\nTipWorked example: estimating krypton binding energy\n\n\n\nYour 14 November problem class gives \\(L_{\\mathrm{vap}}=9.08\\ \\mathrm{kJ\\,mol^{-1}}\\) for krypton. Take an illustrative coordination number \\(z=10\\).\n\\[\n\\varepsilon\\approx\\frac{2(9.08\\times10^3)}{10(6.02214076\\times10^{23})}\n=3.02\\times10^{-21}\\ \\mathrm{J}.\n\\]\nConverting to electronvolts:\n\\[\n\\varepsilon\\approx\\frac{3.02\\times10^{-21}}{1.602176634\\times10^{-19}}\n=\\boxed{0.0189\\ \\mathrm{eV}}.\n\\]\nThe result is an order-of-magnitude intermolecular energy, not the energy of a covalent bond within a molecule. The problem-class solution compares it with \\(\\tfrac32k_BT\\) at room temperature; this is a useful qualitative comparison, but condensation cannot be predicted by a simple one-particle energy threshold alone.\n\n\n\n2.6.1 Bond dissociation versus phase change\nEvaporating liquid nitrogen largely separates molecules from one another; dissociating \\(\\mathrm{N_2}\\) breaks the much stronger bond within each molecule. Your problem class gives a nitrogen dissociation energy of \\(946\\ \\mathrm{kJ\\,mol^{-1}}\\). The corresponding energy per molecule is\n\\[\nE_{\\mathrm{diss}}=\\frac{946\\times10^3}{N_A}\\simeq1.57\\times10^{-18}\\ \\mathrm{J}\\simeq9.82\\ \\mathrm{eV}.\n\\]\nA photon carrying this energy has wavelength\n\\[\n\\lambda=\\frac{hc}{E_{\\mathrm{diss}}}\\simeq\\boxed{126\\ \\mathrm{nm}},\n\\]\nin the ultraviolet. This photon calculation is an idealised threshold estimate: actual photodissociation also depends on molecular absorption and allowed electronic transitions. Equating \\(\\tfrac32k_BT\\) to the dissociation energy gives a characteristic temperature scale, not a temperature at which every molecule dissociates.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#ionic-bonding-and-the-madelung-constant",
+    "href": "chapter-02-bonding.html#ionic-bonding-and-the-madelung-constant",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.7 Ionic bonding and the Madelung constant",
+    "text": "2.7 Ionic bonding and the Madelung constant\n\n\n\n\n\n\nFigure 2.8: Schematic ionic bonding in sodium chloride, showing positive sodium ions and negative chloride ions. The surrounding small dots are illustrative, not a crystallographically accurate electron-density map.\n\n\n\nIn an ionic solid, electron transfer produces oppositely charged ions, whose long-range Coulomb attractions compete with short-range repulsion. Sodium chloride is the introductory example in your lectures.\nFor charges \\(q_1\\) and \\(q_2\\) separated by \\(r\\) in vacuum,\n\\[\nV_C(r)=\\frac{q_1q_2}{4\\pi\\varepsilon_0r}.\n\\]\nA single positive–negative pair has negative potential energy. But an ion in a crystal interacts with many ions of both signs. The Coulomb sum can be written, for a crystal with charges of magnitude \\(e\\) and nearest-neighbour separation \\(r\\),\n\\[\nU_{\\mathrm{Coul}}(r)=-\\frac{\\alpha e^2}{4\\pi\\varepsilon_0r}\n\\]\nper ion pair, where \\(\\alpha\\) is the dimensionless Madelung constant. Its value depends on crystal geometry, not on temperature or the arbitrary size of the chosen unit cell. For the NaCl structure, \\(\\alpha\\simeq1.748\\).\n\n\n\n\n\n\nFigure 2.9: Comparison of the shapes of ionic and dispersion-type interaction potentials.\n\n\n\n\n\n\n\n\n\nFigure 2.10: Illustration of a one-dimensional ionic chain used to motivate the lattice sum.\n\n\n\n\n2.7.1 A simple lattice-energy model\nTo obtain a stable separation, include a short-range repulsive term, represented here by \\(B/r^n\\):\n\\[\nU(r)=-\\frac{A}{r}+\\frac{B}{r^n},\\qquad A=\\frac{\\alpha e^2}{4\\pi\\varepsilon_0}.\n\\]\nAt equilibrium \\(r_0\\),\n\\[\n\\left.\\frac{\\mathrm{d}U}{\\mathrm{d}r}\\right|_{r_0}\n=\\frac{A}{r_0^2}-\\frac{nB}{r_0^{n+1}}=0,\n\\]\nso \\(B=Ar_0^{n-1}/n\\). Substitution gives\n\\[\n\\boxed{U(r_0)=-\\frac{\\alpha e^2}{4\\pi\\varepsilon_0r_0}\\left(1-\\frac1n\\right).}\n\\]\nThis is the elementary Born–Landé-type result. The exponent \\(n\\) represents the short-range repulsion phenomenologically; it is not the same as the number of nearest neighbours \\(z\\) used in the latent-heat estimate.\n\n\n\n\n\n\nNoteScope of the derivation\n\n\n\nThe slides explicitly name the Madelung constant and ionic-solid potential. This presentation supplies a self-contained derivation of the standard simplified model. The detailed numerical lattice sum and the handwritten working should be checked together before this section is treated as a final transcription of your board derivation.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#covalent-bonding",
+    "href": "chapter-02-bonding.html#covalent-bonding",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.8 Covalent bonding",
+    "text": "2.8 Covalent bonding\n\n\n\n\n\n\nFigure 2.11: Simplified schematic of covalent bonding between carbon atoms. This is a conceptual representation rather than a chemically complete structural formula.\n\n\n\nIn a covalent bond, electrons are shared between atoms rather than fully transferred from one atom to another. Quantum-mechanical electronic states can concentrate charge between neighbouring nuclei, lowering the total energy. The Pauli exclusion principle constrains which electrons can occupy a given state. Bond directionality is often important: a molecule or network solid may have strongly preferred geometries.\nA useful contrast is between the strong covalent bond inside a nitrogen molecule and the much weaker intermolecular attractions between nitrogen molecules. This distinction explains why a liquid can boil without its constituent molecules being chemically destroyed.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#metallic-bonding",
+    "href": "chapter-02-bonding.html#metallic-bonding",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.9 Metallic bonding",
+    "text": "2.9 Metallic bonding\n\n\n\n\n\n\nFigure 2.12: Positive sodium ion cores surrounded by delocalised electrons: a simple electron-sea model of metallic bonding.\n\n\n\nIn a metal, valence electrons occupy states that extend through the material rather than remaining associated with one particular atom–atom pair. The positive ion cores and the delocalised electrons form a collectively bound solid. This model helps explain why many metals conduct electricity and heat and can deform without the highly directional bond-breaking associated with some covalent networks.\nThe ionic, covalent and metallic categories are useful limits, not a perfect classification: real materials may exhibit mixed bonding character.\n\n2.9.1 Hydrogen bonding\nA hydrogen bond is a particularly important directional intermolecular interaction involving a hydrogen atom covalently bonded to an electronegative atom (often O, N or F) and an electron-rich site on a neighbouring molecule. In water, a hydrogen bond is conventionally represented as \\(\\mathrm{O-H\\cdots O}\\), where the solid line is the intramolecular covalent bond and the dots represent the intermolecular hydrogen bond.\n\n\n\n\n\n\nFigure 2.13: Conceptual hydrogen-bonding schematic. Scientific caution: this supplied artwork has more than two hydrogens attached to some oxygen centres, so it must not be read as an accurate water-molecule structure. A chemically corrected diagram is needed before publication.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#comparing-bonding-mechanisms",
+    "href": "chapter-02-bonding.html#comparing-bonding-mechanisms",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.10 Comparing bonding mechanisms",
+    "text": "2.10 Comparing bonding mechanisms\n\n\n\n\n\n\n\n\n\nBonding description\nMain microscopic idea\nTypical example\nUseful caution\n\n\n\n\nDispersion / van der Waals\nCorrelated electronic fluctuations and other weak intermolecular interactions\nCondensed noble gases\nWeak per pair; important collectively\n\n\nIonic\nElectrostatic attraction in a lattice of charged ions\nNaCl\nInclude interactions beyond nearest neighbours\n\n\nCovalent\nShared electronic states between atoms\n\\(\\mathrm{N_2}\\), diamond\nOften directional\n\n\nMetallic\nDelocalised valence electrons in a solid\nCopper, aluminium\nConductivity is not a definition of bond strength",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#practice-questions",
+    "href": "chapter-02-bonding.html#practice-questions",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.11 Practice questions",
+    "text": "2.11 Practice questions\nThese are new practice questions, not reproductions of the uploaded problem-class questions.\n\nFor \\(V(r)=4\\varepsilon[(\\sigma/r)^{12}-(\\sigma/r)^6]\\), find the separation at which \\(V=0\\) and explain why this is not the equilibrium separation.\nA hypothetical neutral-atom pair has \\(\\varepsilon=2.5\\times10^{-21}\\ \\mathrm{J}\\) and \\(r_0=0.40\\ \\mathrm{nm}\\). Estimate the harmonic spring constant \\(k_{\\mathrm{eff}}\\).\nA simple liquid has molar vaporisation enthalpy \\(12.0\\ \\mathrm{kJ\\,mol^{-1}}\\). Assuming \\(z=8\\), estimate the intermolecular pair energy in electronvolts. State two limitations.\nExplain why a liquid of diatomic molecules can evaporate without breaking the covalent bonds within those molecules.\nStarting from \\(U(r)=-A/r+B/r^n\\), derive the energy at the equilibrium separation.\n\n\n\n\n\n\n\nTipPractice-question answers\n\n\n\n\n\n\n\\(V=0\\) at \\(r=\\sigma\\); the equilibrium separation is \\(2^{1/6}\\sigma\\), where the derivative vanishes and \\(V=-\\varepsilon\\).\n\\(k_{\\mathrm{eff}}=72\\varepsilon/r_0^2=72(2.5\\times10^{-21})/(0.40\\times10^{-9})^2\\approx1.13\\ \\mathrm{N\\,m^{-1}}\\).\n\\(\\varepsilon\\approx2(12000)/(8N_A)=4.98\\times10^{-21}\\ \\mathrm{J}\\approx0.0311\\ \\mathrm{eV}\\). Limitations include coordination-number uncertainty, contributions from more distant neighbours and the difference between enthalpy and cohesive energy.\nEvaporation overcomes predominantly intermolecular attractions; molecular dissociation requires breaking the stronger intramolecular covalent bond.\nSet \\(U'(r_0)=A/r_0^2-nB/r_0^{n+1}=0\\), giving \\(B=Ar_0^{n-1}/n\\). Hence \\(U(r_0)=-A(1-1/n)/r_0\\).",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#summary",
+    "href": "chapter-02-bonding.html#summary",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.12 Summary",
+    "text": "2.12 Summary\nInteratomic bonding is a balance between attraction and short-range repulsion. A potential-energy minimum defines a preferred separation, while its curvature sets the stiffness of small vibrations. The Lennard–Jones model illustrates this for neutral atoms; latent heats provide an approximate route from macroscopic measurements to microscopic cohesion. Ionic, covalent and metallic bonds arise from different ways in which electronic charge and quantum states lower the energy of matter.\n\n\n\n\n\n\nNoteLooking ahead\n\n\n\nIn Chapter 3 we consider how thermal energy competes with these binding interactions and how a gas can be described through temperature, pressure and the ideal gas law.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#appendix-electrostatic-versus-gravitational-interaction",
+    "href": "chapter-02-bonding.html#appendix-electrostatic-versus-gravitational-interaction",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.13 Appendix: electrostatic versus gravitational interaction",
+    "text": "2.13 Appendix: electrostatic versus gravitational interaction\nLecture 2 compares the strengths of different fundamental forces at atomic scales. For two particles with charges \\(q_1,q_2\\) and masses \\(m_1,m_2\\), separated by \\(r\\),\n\\[\n\\left|F_{\\mathrm{electric}}\\right|=\\frac{|q_1q_2|}{4\\pi\\varepsilon_0r^2},\\qquad\n|F_{\\mathrm{gravity}}|=\\frac{Gm_1m_2}{r^2}.\n\\]\nThe ratio is independent of \\(r\\) when the particles are treated as point objects. For a proton and electron, electric attraction is about \\(10^{39}\\) times stronger than gravity. This is why electromagnetic interactions dominate chemical bonding, even though gravity controls astronomical structures. This comparison is an additional worked explanation of the lecture’s force-range discussion.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-02-bonding.html#notes-on-scope-and-accuracy",
+    "href": "chapter-02-bonding.html#notes-on-scope-and-accuracy",
+    "title": "2  Atomic and Molecular Bonding",
+    "section": "2.14 Notes on scope and accuracy",
+    "text": "2.14 Notes on scope and accuracy\nThe extra dipole-force appendix in Lecture 2 is marked not examined and has therefore not been presented as a required derivation. The Madelung calculation is likewise treated as an extension until the exact assessment depth is confirmed. The figures are schematic illustrations; they should be interpreted alongside the equations rather than as exact microscopic representations.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
     ]
   }
 ]
