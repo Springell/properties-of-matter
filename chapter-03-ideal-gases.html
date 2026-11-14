@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Ideal Gases – Properties of Matter</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter-04-kinetic-theory.html" rel="next">
+<link href="./chapter-02-bonding.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-631496449bf32ff9b0bb69a6bfd9195d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter-03-ideal-gases.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ideal Gases</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Properties of Matter</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-01-atoms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Atoms and the Structure of Matter</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-02-bonding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Atomic and Molecular Bonding</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-03-ideal-gases.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ideal Gases</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-04-kinetic-theory.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Kinetic Theory of Gases</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes"><span class="header-section-number">3.1</span> Learning outcomes</a></li>
+  <li><a href="#the-ideal-gas-model" id="toc-the-ideal-gas-model" class="nav-link" data-scroll-target="#the-ideal-gas-model"><span class="header-section-number">3.2</span> The ideal-gas model</a>
+  <ul class="collapse">
+  <li><a href="#gas-laws-and-the-equation-of-state" id="toc-gas-laws-and-the-equation-of-state" class="nav-link" data-scroll-target="#gas-laws-and-the-equation-of-state"><span class="header-section-number">3.2.1</span> Gas laws and the equation of state</a></li>
+  </ul></li>
+  <li><a href="#thermal-equilibrium-and-the-zeroth-law" id="toc-thermal-equilibrium-and-the-zeroth-law" class="nav-link" data-scroll-target="#thermal-equilibrium-and-the-zeroth-law"><span class="header-section-number">3.3</span> Thermal equilibrium and the zeroth law</a></li>
+  <li><a href="#temperature-scales-and-gas-thermometry" id="toc-temperature-scales-and-gas-thermometry" class="nav-link" data-scroll-target="#temperature-scales-and-gas-thermometry"><span class="header-section-number">3.4</span> Temperature scales and gas thermometry</a></li>
+  <li><a href="#temperature-and-molecular-motion" id="toc-temperature-and-molecular-motion" class="nav-link" data-scroll-target="#temperature-and-molecular-motion"><span class="header-section-number">3.5</span> Temperature and molecular motion</a></li>
+  <li><a href="#equipartition-and-molecular-degrees-of-freedom" id="toc-equipartition-and-molecular-degrees-of-freedom" class="nav-link" data-scroll-target="#equipartition-and-molecular-degrees-of-freedom"><span class="header-section-number">3.6</span> Equipartition and molecular degrees of freedom</a>
+  <ul class="collapse">
+  <li><a href="#diatomic-molecules" id="toc-diatomic-molecules" class="nav-link" data-scroll-target="#diatomic-molecules"><span class="header-section-number">3.6.1</span> Diatomic molecules</a></li>
+  </ul></li>
+  <li><a href="#heat-capacity-at-constant-volume-and-constant-pressure" id="toc-heat-capacity-at-constant-volume-and-constant-pressure" class="nav-link" data-scroll-target="#heat-capacity-at-constant-volume-and-constant-pressure"><span class="header-section-number">3.7</span> Heat capacity at constant volume and constant pressure</a></li>
+  <li><a href="#what-the-ideal-gas-model-does-not-describe" id="toc-what-the-ideal-gas-model-does-not-describe" class="nav-link" data-scroll-target="#what-the-ideal-gas-model-does-not-describe"><span class="header-section-number">3.8</span> What the ideal-gas model does not describe</a></li>
+  <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">3.9</span> Problems</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">3.10</span> Further reading</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-ideal-gases" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Ideal Gases</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-outcomes" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="learning-outcomes"><span class="header-section-number">3.1</span> Learning outcomes</h2>
+<p>By the end of this chapter, you should be able to:</p>
+<ul>
+<li>describe the assumptions of the ideal-gas model and use the equation of state;</li>
+<li>explain thermal equilibrium, the zeroth law and the operational meaning of temperature;</li>
+<li>distinguish the Celsius and kelvin scales and describe a constant-volume gas thermometer;</li>
+<li>relate pressure, volume and temperature in simple transformations;</li>
+<li>explain the statistical meaning of temperature and the principle of equipartition;</li>
+<li>calculate internal energy and molar heat capacities of ideal gases, including the effect of molecular degrees of freedom.</li>
+</ul>
+<p>Chapter 4 develops the molecular-collision derivation and Maxwell–Boltzmann statistics in greater detail. The first law and thermodynamic work are developed systematically in Chapter 6.</p>
+</section>
+<section id="the-ideal-gas-model" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="the-ideal-gas-model"><span class="header-section-number">3.2</span> The ideal-gas model</h2>
+<p>A gas consists of an enormous number of particles in continuous, irregular motion. In the <strong>ideal-gas model</strong>, we assume that (i) the particles occupy negligible volume compared with the container, (ii) there are no intermolecular forces except during brief collisions, and (iii) collisions between molecules and with the walls are elastic. We also assume a gas in thermal equilibrium, with a well-defined temperature.</p>
+<div id="fig-ch3-ideal-gas" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3-ideal-gas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/Ideal_gas.svg" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3-ideal-gas-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Schematic of an ideal gas in a container.
+</figcaption>
+</figure>
+</div>
+<p>These are approximations, not statements that real molecules are dimensionless or never interact. The ideal model works particularly well for sufficiently dilute gases, away from condensation.</p>
+<section id="gas-laws-and-the-equation-of-state" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="gas-laws-and-the-equation-of-state"><span class="header-section-number">3.2.1</span> Gas laws and the equation of state</h3>
+<p>At fixed temperature and amount of gas, <strong>Boyle’s law</strong> gives <span class="math inline">\(PV=\mathrm{constant}\)</span>. At fixed pressure, <strong>Charles’ law</strong> gives <span class="math inline">\(V/T=\mathrm{constant}\)</span>, where <span class="math inline">\(T\)</span> is the absolute temperature. Combining the empirical laws leads to</p>
+<p><span class="math display">\[
+\boxed{PV=nRT=Nk_{\mathrm B}T.} \tag{3.1}
+\]</span></p>
+<p>Here <span class="math inline">\(P\)</span> is absolute pressure, <span class="math inline">\(V\)</span> is volume, <span class="math inline">\(n\)</span> is the amount of substance in moles, <span class="math inline">\(N\)</span> is the number of molecules, <span class="math inline">\(R=8.314\,462\,618\ldots\,\mathrm{J\,mol^{-1}\,K^{-1}}\)</span> and <span class="math inline">\(k_{\mathrm B}=1.380\,649\times10^{-23}\,\mathrm{J\,K^{-1}}\)</span>. Since <span class="math inline">\(N=nN_{\mathrm A}\)</span>, we have <span class="math inline">\(R=N_{\mathrm A}k_{\mathrm B}\)</span>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Absolute temperature
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Always use <strong>kelvin</strong>, not degrees Celsius, in <span class="math inline">\(PV=nRT\)</span> and related ratios such as <span class="math inline">\(V/T\)</span>.</p>
+</div>
+</div>
+<p><strong>Worked example.</strong> One mole of gas occupies <span class="math inline">\(24.0\,\mathrm L\)</span> at <span class="math inline">\(300\,\mathrm K\)</span>. The pressure is</p>
+<p><span class="math display">\[
+P=\frac{nRT}{V}=\frac{(1)(8.314)(300)}{0.0240}
+\simeq1.04\times10^5\,\mathrm{Pa}.
+\]</span></p>
+<p>For a fixed amount of ideal gas in two equilibrium states,</p>
+<p><span class="math display">\[
+\boxed{\frac{P_1V_1}{T_1}=\frac{P_2V_2}{T_2}.} \tag{3.2}
+\]</span></p>
+<p>For example, at fixed pressure, doubling the absolute temperature doubles the volume. At fixed volume, doubling <span class="math inline">\(T\)</span> doubles <span class="math inline">\(P\)</span>.</p>
+</section>
+</section>
+<section id="thermal-equilibrium-and-the-zeroth-law" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="thermal-equilibrium-and-the-zeroth-law"><span class="header-section-number">3.3</span> Thermal equilibrium and the zeroth law</h2>
+<p><strong>Temperature</strong> determines the direction of spontaneous heat transfer between systems that can exchange energy thermally: energy flows as heat from higher temperature to lower temperature until thermal equilibrium is reached (subject to the absence of other driving effects). A thermometer works because it is allowed to reach thermal equilibrium with the object being measured.</p>
+<p>The <strong>zeroth law of thermodynamics</strong> states:</p>
+<blockquote class="blockquote">
+<p>If system A is in thermal equilibrium with system C, and system B is in thermal equilibrium with system C, then A and B are in thermal equilibrium with each other.</p>
+</blockquote>
+<p>This transitive property makes temperature a meaningful measurable state variable. A thermometer can act as a third system used to compare the temperatures of two objects. Thermal equilibrium should not be confused with mechanical equilibrium (equal pressures) or chemical equilibrium.</p>
+<div id="fig-ch3-systems" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3-systems-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/System_surroundings.svg" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3-systems-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Systems and surroundings, used to distinguish the object of study from its environment.
+</figcaption>
+</figure>
+</div>
+<p>A <strong>closed system</strong> can exchange energy but not matter with its surroundings. An <strong>open system</strong> can exchange both; an <strong>isolated system</strong> exchanges neither. These distinctions will become important in Chapter 6.</p>
+</section>
+<section id="temperature-scales-and-gas-thermometry" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="temperature-scales-and-gas-thermometry"><span class="header-section-number">3.4</span> Temperature scales and gas thermometry</h2>
+<p>The kelvin and Celsius scales have the same size degree, but different zero points:</p>
+<p><span class="math display">\[
+T/\mathrm K=\theta/{}^\circ\mathrm C+273.15.
+\]</span></p>
+<p>In a constant-volume gas thermometer, a fixed amount of sufficiently dilute gas is confined at constant volume. Equation (3.1) predicts</p>
+<p><span class="math display">\[
+P=\frac{nR}{V}T.
+\]</span></p>
+<p>Thus pressure provides a measure of absolute temperature. Plotting pressure against Celsius temperature and extrapolating the straight line to zero pressure gives approximately <span class="math inline">\(-273.15\,{}^\circ\mathrm C\)</span>.</p>
+<div id="fig-ch3-thermometer" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3-thermometer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/Gas_thermometer.svg" class="img-fluid figure-img" style="width:65.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3-thermometer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Schematic constant-volume gas thermometer.
+</figcaption>
+</figure>
+</div>
+<div id="fig-ch3-extrapolate" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3-extrapolate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/Extrapolate_for_T_0.svg" class="img-fluid figure-img" style="width:75.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3-extrapolate-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Extrapolation of gas pressure to the absolute zero of temperature.
+</figcaption>
+</figure>
+</div>
+<p>The extrapolation is an idealisation: real gases depart from ideal behaviour, and a gas may liquefy before reaching very low temperatures. The historical <strong>triple point of water</strong> is at <span class="math inline">\(273.16\,\mathrm K\)</span> (<span class="math inline">\(0.01\,{}^\circ\mathrm C\)</span>); it was once used to define the kelvin. Since 2019 the SI kelvin has instead been defined by fixing the numerical value of <span class="math inline">\(k_{\mathrm B}\)</span> exactly.</p>
+<div id="fig-ch3-triple-point" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3-triple-point-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/triple_point_cell.svg" class="img-fluid figure-img" style="width:60.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3-triple-point-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: Triple-point cell, a historical reference for thermometry.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="temperature-and-molecular-motion" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="temperature-and-molecular-motion"><span class="header-section-number">3.5</span> Temperature and molecular motion</h2>
+<p>The ideal-gas equation is a macroscopic description: it relates measured pressure, volume and temperature without directly describing individual molecules. Kinetic theory supplies the microscopic link. For <span class="math inline">\(N\)</span> identical particles of mass <span class="math inline">\(m\)</span> in equilibrium,</p>
+<p><span class="math display">\[
+PV=\frac13Nm\langle c^2\rangle,
+\]</span></p>
+<p>where <span class="math inline">\(c\)</span> is molecular <strong>speed</strong> and <span class="math inline">\(\langle c^2\rangle\)</span> is its mean square. Comparing with <span class="math inline">\(PV=Nk_{\mathrm B}T\)</span> gives</p>
+<p><span class="math display">\[
+\boxed{\left\langle\frac12mc^2\right\rangle=\frac32k_{\mathrm B}T.} \tag{3.3}
+\]</span></p>
+<p>This applies to the <strong>translational</strong> motion of a classical gas in equilibrium. It does <strong>not</strong> mean that all molecules have the same speed, nor does it mean that temperature is defined solely by translational kinetic energy in every kind of matter. We derive the pressure result from wall collisions and the full distribution of molecular speeds in Chapter 4.</p>
+</section>
+<section id="equipartition-and-molecular-degrees-of-freedom" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="equipartition-and-molecular-degrees-of-freedom"><span class="header-section-number">3.6</span> Equipartition and molecular degrees of freedom</h2>
+<p>The classical <strong>equipartition theorem</strong> states that each independent quadratic term in the energy contributes an average <span class="math inline">\(\tfrac12k_{\mathrm B}T\)</span> per molecule at thermal equilibrium, provided the classical approximation is valid.</p>
+<p>For translational motion,</p>
+<p><span class="math display">\[
+E_{\mathrm{tr}}=\frac{p_x^2}{2m}+\frac{p_y^2}{2m}+\frac{p_z^2}{2m},
+\]</span></p>
+<p>there are three quadratic contributions, giving <span class="math inline">\(3k_{\mathrm B}T/2\)</span> per molecule. For a gas of <span class="math inline">\(N\)</span> noninteracting monatomic particles, neglecting electronic excitation,</p>
+<p><span class="math display">\[
+\boxed{U=\frac32Nk_{\mathrm B}T=\frac32nRT.} \tag{3.4}
+\]</span></p>
+<p>Here <span class="math inline">\(U\)</span> is <strong>internal energy</strong>, the total microscopic energy of the system measured relative to an arbitrary reference. It is a state function. For an ideal gas with fixed composition and accessible degrees of freedom, <span class="math inline">\(U\)</span> depends on temperature alone.</p>
+<section id="diatomic-molecules" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="diatomic-molecules"><span class="header-section-number">3.6.1</span> Diatomic molecules</h3>
+<p>At ordinary temperatures, a typical linear diatomic molecule has three translational and two rotational quadratic kinetic contributions. If vibration is not appreciably excited, the molar internal energy is approximately</p>
+<p><span class="math display">\[
+U=\frac52nRT.
+\]</span></p>
+<p>At sufficiently high temperatures, the vibrational mode becomes excited. In the classical limit, a harmonic vibrational mode contributes <span class="math inline">\(k_{\mathrm B}T\)</span> per molecule: half from kinetic energy and half from potential energy. This raises the corresponding high-temperature result to <span class="math inline">\(U\approx\tfrac72nRT\)</span> for one active vibrational mode, assuming the molecular model remains valid.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why does the heat capacity change with temperature?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Rotational and vibrational energy levels are quantised. A mode whose excitation energy is large compared with <span class="math inline">\(k_{\mathrm B}T\)</span> is effectively <strong>frozen out</strong> and contributes little to heat capacity. Classical equipartition becomes reliable when the relevant energy spacings are small compared with <span class="math inline">\(k_{\mathrm B}T\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="heat-capacity-at-constant-volume-and-constant-pressure" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="heat-capacity-at-constant-volume-and-constant-pressure"><span class="header-section-number">3.7</span> Heat capacity at constant volume and constant pressure</h2>
+<p>Heat capacity tells us how much energy must be transferred as heat to produce a specified temperature change under defined conditions. For a closed simple compressible system doing only pressure–volume work, the molar heat capacities are</p>
+<p><span class="math display">\[
+C_{V,m}=\frac1n\left(\frac{\partial U}{\partial T}\right)_V,
+\qquad
+C_{P,m}=\frac1n\left(\frac{\partial H}{\partial T}\right)_P,
+\]</span></p>
+<p>where <span class="math inline">\(H=U+PV\)</span> is enthalpy. The corresponding total heat capacities are <span class="math inline">\(C_V=nC_{V,m}\)</span> and <span class="math inline">\(C_P=nC_{P,m}\)</span>. At constant volume, with no other work, <span class="math inline">\(\delta Q=dU\)</span>. At constant pressure, with only pressure–volume work, <span class="math inline">\(\delta Q=dH\)</span>.</p>
+<p>For an ideal gas <span class="math inline">\(PV=nRT\)</span>, so <span class="math inline">\(H=U+nRT\)</span>. Consequently,</p>
+<p><span class="math display">\[
+\boxed{C_{P,m}-C_{V,m}=R.} \tag{3.5}
+\]</span></p>
+<p>For a monatomic ideal gas,</p>
+<p><span class="math display">\[
+C_{V,m}=\frac32R,\qquad C_{P,m}=\frac52R,\qquad
+\gamma\equiv\frac{C_{P,m}}{C_{V,m}}=\frac53.
+\]</span></p>
+<p>For a typical diatomic gas near room temperature (with vibration frozen out),</p>
+<p><span class="math display">\[
+C_{V,m}\simeq\frac52R,\qquad C_{P,m}\simeq\frac72R,\qquad
+\gamma\simeq\frac75=1.40.
+\]</span></p>
+<p><strong>Worked example: nitrogen.</strong> For one mole of nitrogen at <span class="math inline">\(T=293\,\mathrm K\)</span>, the approximate internal energy in this model is</p>
+<p><span class="math display">\[
+U\simeq\frac52RT\simeq6.09\,\mathrm{kJ}.
+\]</span></p>
+<p>For a constant-volume temperature increase of <span class="math inline">\(20\,\mathrm K\)</span>, the heat required is <span class="math inline">\(Q\simeq nC_{V,m}\Delta T=(5/2)R(20)\simeq416\,\mathrm J\)</span>.</p>
+</section>
+<section id="what-the-ideal-gas-model-does-not-describe" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="what-the-ideal-gas-model-does-not-describe"><span class="header-section-number">3.8</span> What the ideal-gas model does not describe</h2>
+<p>At high density or near a phase transition, finite molecular size and intermolecular attractions become important. The ideal-gas equation then becomes inaccurate. Real gases, the van der Waals equation and phase behaviour are considered in Chapter 5.</p>
+</section>
+<section id="problems" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="problems"><span class="header-section-number">3.9</span> Problems</h2>
+<ol type="1">
+<li><strong>Equation of state.</strong> Calculate the pressure of <span class="math inline">\(0.75\,\mathrm{mol}\)</span> of ideal argon in <span class="math inline">\(5.0\times10^{-4}\,\mathrm{m^3}\)</span> at <span class="math inline">\(600\,\mathrm K\)</span>.</li>
+<li><strong>Combined gas law.</strong> A fixed amount of gas doubles its absolute temperature while its pressure triples. Find <span class="math inline">\(V_2/V_1\)</span> and the ratio <span class="math inline">\(\rho_2/\rho_1\)</span>.</li>
+<li><strong>Gas thermometer.</strong> Explain why extrapolating pressure to zero at fixed volume provides an estimate of absolute zero, and identify two limitations of the procedure.</li>
+<li><strong>Zeroth law.</strong> Describe how a thermometer can measure the temperature of two separate objects without placing the objects in contact with each other.</li>
+<li><strong>Equipartition.</strong> Calculate the average translational kinetic energy of one molecule at <span class="math inline">\(300\,\mathrm K\)</span>, and explain why this is not the kinetic energy of every molecule.</li>
+<li><strong>Internal energy.</strong> Estimate the internal energy of one mole of nitrogen gas at <span class="math inline">\(20\,{}^\circ\mathrm C\)</span> using the room-temperature diatomic model.</li>
+<li><strong>Heat capacities.</strong> Derive <span class="math inline">\(C_{P,m}-C_{V,m}=R\)</span> for an ideal gas and calculate <span class="math inline">\(\gamma\)</span> for a monatomic gas.</li>
+<li><strong>Degrees of freedom.</strong> Explain why a diatomic gas may have a larger heat capacity at high temperature than at room temperature.</li>
+</ol>
+<p>Worked solutions are available separately.</p>
+</section>
+<section id="further-reading" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">3.10</span> Further reading</h2>
+<p>For background, see the sections on the ideal-gas equation, temperature, molecular degrees of freedom and heat capacities in Blundell &amp; Blundell, <em>Concepts in Thermal Physics</em>, and Kittel &amp; Kroemer, <em>Thermal Physics</em>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter-02-bonding.html" class="pagination-link" aria-label="Atomic and Molecular Bonding">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Atomic and Molecular Bonding</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./chapter-04-kinetic-theory.html" class="pagination-link" aria-label="Kinetic Theory of Gases">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Kinetic Theory of Gases</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

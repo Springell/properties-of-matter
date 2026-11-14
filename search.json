@@ -288,5 +288,235 @@
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Atomic and Molecular Bonding</span>"
     ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html",
+    "href": "chapter-03-ideal-gases.html",
+    "title": "3  Ideal Gases",
+    "section": "",
+    "text": "3.1 Learning outcomes\nBy the end of this chapter, you should be able to:\nChapter 4 develops the molecular-collision derivation and Maxwell–Boltzmann statistics in greater detail. The first law and thermodynamic work are developed systematically in Chapter 6.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#learning-outcomes",
+    "href": "chapter-03-ideal-gases.html#learning-outcomes",
+    "title": "3  Ideal Gases",
+    "section": "",
+    "text": "describe the assumptions of the ideal-gas model and use the equation of state;\nexplain thermal equilibrium, the zeroth law and the operational meaning of temperature;\ndistinguish the Celsius and kelvin scales and describe a constant-volume gas thermometer;\nrelate pressure, volume and temperature in simple transformations;\nexplain the statistical meaning of temperature and the principle of equipartition;\ncalculate internal energy and molar heat capacities of ideal gases, including the effect of molecular degrees of freedom.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#the-ideal-gas-model",
+    "href": "chapter-03-ideal-gases.html#the-ideal-gas-model",
+    "title": "3  Ideal Gases",
+    "section": "3.2 The ideal-gas model",
+    "text": "3.2 The ideal-gas model\nA gas consists of an enormous number of particles in continuous, irregular motion. In the ideal-gas model, we assume that (i) the particles occupy negligible volume compared with the container, (ii) there are no intermolecular forces except during brief collisions, and (iii) collisions between molecules and with the walls are elastic. We also assume a gas in thermal equilibrium, with a well-defined temperature.\n\n\n\n\n\n\nFigure 3.1: Schematic of an ideal gas in a container.\n\n\n\nThese are approximations, not statements that real molecules are dimensionless or never interact. The ideal model works particularly well for sufficiently dilute gases, away from condensation.\n\n3.2.1 Gas laws and the equation of state\nAt fixed temperature and amount of gas, Boyle’s law gives \\(PV=\\mathrm{constant}\\). At fixed pressure, Charles’ law gives \\(V/T=\\mathrm{constant}\\), where \\(T\\) is the absolute temperature. Combining the empirical laws leads to\n\\[\n\\boxed{PV=nRT=Nk_{\\mathrm B}T.} \\tag{3.1}\n\\]\nHere \\(P\\) is absolute pressure, \\(V\\) is volume, \\(n\\) is the amount of substance in moles, \\(N\\) is the number of molecules, \\(R=8.314\\,462\\,618\\ldots\\,\\mathrm{J\\,mol^{-1}\\,K^{-1}}\\) and \\(k_{\\mathrm B}=1.380\\,649\\times10^{-23}\\,\\mathrm{J\\,K^{-1}}\\). Since \\(N=nN_{\\mathrm A}\\), we have \\(R=N_{\\mathrm A}k_{\\mathrm B}\\).\n\n\n\n\n\n\nImportantAbsolute temperature\n\n\n\nAlways use kelvin, not degrees Celsius, in \\(PV=nRT\\) and related ratios such as \\(V/T\\).\n\n\nWorked example. One mole of gas occupies \\(24.0\\,\\mathrm L\\) at \\(300\\,\\mathrm K\\). The pressure is\n\\[\nP=\\frac{nRT}{V}=\\frac{(1)(8.314)(300)}{0.0240}\n\\simeq1.04\\times10^5\\,\\mathrm{Pa}.\n\\]\nFor a fixed amount of ideal gas in two equilibrium states,\n\\[\n\\boxed{\\frac{P_1V_1}{T_1}=\\frac{P_2V_2}{T_2}.} \\tag{3.2}\n\\]\nFor example, at fixed pressure, doubling the absolute temperature doubles the volume. At fixed volume, doubling \\(T\\) doubles \\(P\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#thermal-equilibrium-and-the-zeroth-law",
+    "href": "chapter-03-ideal-gases.html#thermal-equilibrium-and-the-zeroth-law",
+    "title": "3  Ideal Gases",
+    "section": "3.3 Thermal equilibrium and the zeroth law",
+    "text": "3.3 Thermal equilibrium and the zeroth law\nTemperature determines the direction of spontaneous heat transfer between systems that can exchange energy thermally: energy flows as heat from higher temperature to lower temperature until thermal equilibrium is reached (subject to the absence of other driving effects). A thermometer works because it is allowed to reach thermal equilibrium with the object being measured.\nThe zeroth law of thermodynamics states:\n\nIf system A is in thermal equilibrium with system C, and system B is in thermal equilibrium with system C, then A and B are in thermal equilibrium with each other.\n\nThis transitive property makes temperature a meaningful measurable state variable. A thermometer can act as a third system used to compare the temperatures of two objects. Thermal equilibrium should not be confused with mechanical equilibrium (equal pressures) or chemical equilibrium.\n\n\n\n\n\n\nFigure 3.2: Systems and surroundings, used to distinguish the object of study from its environment.\n\n\n\nA closed system can exchange energy but not matter with its surroundings. An open system can exchange both; an isolated system exchanges neither. These distinctions will become important in Chapter 6.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#temperature-scales-and-gas-thermometry",
+    "href": "chapter-03-ideal-gases.html#temperature-scales-and-gas-thermometry",
+    "title": "3  Ideal Gases",
+    "section": "3.4 Temperature scales and gas thermometry",
+    "text": "3.4 Temperature scales and gas thermometry\nThe kelvin and Celsius scales have the same size degree, but different zero points:\n\\[\nT/\\mathrm K=\\theta/{}^\\circ\\mathrm C+273.15.\n\\]\nIn a constant-volume gas thermometer, a fixed amount of sufficiently dilute gas is confined at constant volume. Equation (3.1) predicts\n\\[\nP=\\frac{nR}{V}T.\n\\]\nThus pressure provides a measure of absolute temperature. Plotting pressure against Celsius temperature and extrapolating the straight line to zero pressure gives approximately \\(-273.15\\,{}^\\circ\\mathrm C\\).\n\n\n\n\n\n\nFigure 3.3: Schematic constant-volume gas thermometer.\n\n\n\n\n\n\n\n\n\nFigure 3.4: Extrapolation of gas pressure to the absolute zero of temperature.\n\n\n\nThe extrapolation is an idealisation: real gases depart from ideal behaviour, and a gas may liquefy before reaching very low temperatures. The historical triple point of water is at \\(273.16\\,\\mathrm K\\) (\\(0.01\\,{}^\\circ\\mathrm C\\)); it was once used to define the kelvin. Since 2019 the SI kelvin has instead been defined by fixing the numerical value of \\(k_{\\mathrm B}\\) exactly.\n\n\n\n\n\n\nFigure 3.5: Triple-point cell, a historical reference for thermometry.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#temperature-and-molecular-motion",
+    "href": "chapter-03-ideal-gases.html#temperature-and-molecular-motion",
+    "title": "3  Ideal Gases",
+    "section": "3.5 Temperature and molecular motion",
+    "text": "3.5 Temperature and molecular motion\nThe ideal-gas equation is a macroscopic description: it relates measured pressure, volume and temperature without directly describing individual molecules. Kinetic theory supplies the microscopic link. For \\(N\\) identical particles of mass \\(m\\) in equilibrium,\n\\[\nPV=\\frac13Nm\\langle c^2\\rangle,\n\\]\nwhere \\(c\\) is molecular speed and \\(\\langle c^2\\rangle\\) is its mean square. Comparing with \\(PV=Nk_{\\mathrm B}T\\) gives\n\\[\n\\boxed{\\left\\langle\\frac12mc^2\\right\\rangle=\\frac32k_{\\mathrm B}T.} \\tag{3.3}\n\\]\nThis applies to the translational motion of a classical gas in equilibrium. It does not mean that all molecules have the same speed, nor does it mean that temperature is defined solely by translational kinetic energy in every kind of matter. We derive the pressure result from wall collisions and the full distribution of molecular speeds in Chapter 4.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#equipartition-and-molecular-degrees-of-freedom",
+    "href": "chapter-03-ideal-gases.html#equipartition-and-molecular-degrees-of-freedom",
+    "title": "3  Ideal Gases",
+    "section": "3.6 Equipartition and molecular degrees of freedom",
+    "text": "3.6 Equipartition and molecular degrees of freedom\nThe classical equipartition theorem states that each independent quadratic term in the energy contributes an average \\(\\tfrac12k_{\\mathrm B}T\\) per molecule at thermal equilibrium, provided the classical approximation is valid.\nFor translational motion,\n\\[\nE_{\\mathrm{tr}}=\\frac{p_x^2}{2m}+\\frac{p_y^2}{2m}+\\frac{p_z^2}{2m},\n\\]\nthere are three quadratic contributions, giving \\(3k_{\\mathrm B}T/2\\) per molecule. For a gas of \\(N\\) noninteracting monatomic particles, neglecting electronic excitation,\n\\[\n\\boxed{U=\\frac32Nk_{\\mathrm B}T=\\frac32nRT.} \\tag{3.4}\n\\]\nHere \\(U\\) is internal energy, the total microscopic energy of the system measured relative to an arbitrary reference. It is a state function. For an ideal gas with fixed composition and accessible degrees of freedom, \\(U\\) depends on temperature alone.\n\n3.6.1 Diatomic molecules\nAt ordinary temperatures, a typical linear diatomic molecule has three translational and two rotational quadratic kinetic contributions. If vibration is not appreciably excited, the molar internal energy is approximately\n\\[\nU=\\frac52nRT.\n\\]\nAt sufficiently high temperatures, the vibrational mode becomes excited. In the classical limit, a harmonic vibrational mode contributes \\(k_{\\mathrm B}T\\) per molecule: half from kinetic energy and half from potential energy. This raises the corresponding high-temperature result to \\(U\\approx\\tfrac72nRT\\) for one active vibrational mode, assuming the molecular model remains valid.\n\n\n\n\n\n\nNoteWhy does the heat capacity change with temperature?\n\n\n\nRotational and vibrational energy levels are quantised. A mode whose excitation energy is large compared with \\(k_{\\mathrm B}T\\) is effectively frozen out and contributes little to heat capacity. Classical equipartition becomes reliable when the relevant energy spacings are small compared with \\(k_{\\mathrm B}T\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#heat-capacity-at-constant-volume-and-constant-pressure",
+    "href": "chapter-03-ideal-gases.html#heat-capacity-at-constant-volume-and-constant-pressure",
+    "title": "3  Ideal Gases",
+    "section": "3.7 Heat capacity at constant volume and constant pressure",
+    "text": "3.7 Heat capacity at constant volume and constant pressure\nHeat capacity tells us how much energy must be transferred as heat to produce a specified temperature change under defined conditions. For a closed simple compressible system doing only pressure–volume work, the molar heat capacities are\n\\[\nC_{V,m}=\\frac1n\\left(\\frac{\\partial U}{\\partial T}\\right)_V,\n\\qquad\nC_{P,m}=\\frac1n\\left(\\frac{\\partial H}{\\partial T}\\right)_P,\n\\]\nwhere \\(H=U+PV\\) is enthalpy. The corresponding total heat capacities are \\(C_V=nC_{V,m}\\) and \\(C_P=nC_{P,m}\\). At constant volume, with no other work, \\(\\delta Q=dU\\). At constant pressure, with only pressure–volume work, \\(\\delta Q=dH\\).\nFor an ideal gas \\(PV=nRT\\), so \\(H=U+nRT\\). Consequently,\n\\[\n\\boxed{C_{P,m}-C_{V,m}=R.} \\tag{3.5}\n\\]\nFor a monatomic ideal gas,\n\\[\nC_{V,m}=\\frac32R,\\qquad C_{P,m}=\\frac52R,\\qquad\n\\gamma\\equiv\\frac{C_{P,m}}{C_{V,m}}=\\frac53.\n\\]\nFor a typical diatomic gas near room temperature (with vibration frozen out),\n\\[\nC_{V,m}\\simeq\\frac52R,\\qquad C_{P,m}\\simeq\\frac72R,\\qquad\n\\gamma\\simeq\\frac75=1.40.\n\\]\nWorked example: nitrogen. For one mole of nitrogen at \\(T=293\\,\\mathrm K\\), the approximate internal energy in this model is\n\\[\nU\\simeq\\frac52RT\\simeq6.09\\,\\mathrm{kJ}.\n\\]\nFor a constant-volume temperature increase of \\(20\\,\\mathrm K\\), the heat required is \\(Q\\simeq nC_{V,m}\\Delta T=(5/2)R(20)\\simeq416\\,\\mathrm J\\).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#what-the-ideal-gas-model-does-not-describe",
+    "href": "chapter-03-ideal-gases.html#what-the-ideal-gas-model-does-not-describe",
+    "title": "3  Ideal Gases",
+    "section": "3.8 What the ideal-gas model does not describe",
+    "text": "3.8 What the ideal-gas model does not describe\nAt high density or near a phase transition, finite molecular size and intermolecular attractions become important. The ideal-gas equation then becomes inaccurate. Real gases, the van der Waals equation and phase behaviour are considered in Chapter 5.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#problems",
+    "href": "chapter-03-ideal-gases.html#problems",
+    "title": "3  Ideal Gases",
+    "section": "3.9 Problems",
+    "text": "3.9 Problems\n\nEquation of state. Calculate the pressure of \\(0.75\\,\\mathrm{mol}\\) of ideal argon in \\(5.0\\times10^{-4}\\,\\mathrm{m^3}\\) at \\(600\\,\\mathrm K\\).\nCombined gas law. A fixed amount of gas doubles its absolute temperature while its pressure triples. Find \\(V_2/V_1\\) and the ratio \\(\\rho_2/\\rho_1\\).\nGas thermometer. Explain why extrapolating pressure to zero at fixed volume provides an estimate of absolute zero, and identify two limitations of the procedure.\nZeroth law. Describe how a thermometer can measure the temperature of two separate objects without placing the objects in contact with each other.\nEquipartition. Calculate the average translational kinetic energy of one molecule at \\(300\\,\\mathrm K\\), and explain why this is not the kinetic energy of every molecule.\nInternal energy. Estimate the internal energy of one mole of nitrogen gas at \\(20\\,{}^\\circ\\mathrm C\\) using the room-temperature diatomic model.\nHeat capacities. Derive \\(C_{P,m}-C_{V,m}=R\\) for an ideal gas and calculate \\(\\gamma\\) for a monatomic gas.\nDegrees of freedom. Explain why a diatomic gas may have a larger heat capacity at high temperature than at room temperature.\n\nWorked solutions are available separately.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-03-ideal-gases.html#further-reading",
+    "href": "chapter-03-ideal-gases.html#further-reading",
+    "title": "3  Ideal Gases",
+    "section": "3.10 Further reading",
+    "text": "3.10 Further reading\nFor background, see the sections on the ideal-gas equation, temperature, molecular degrees of freedom and heat capacities in Blundell & Blundell, Concepts in Thermal Physics, and Kittel & Kroemer, Thermal Physics.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Ideal Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html",
+    "href": "chapter-04-kinetic-theory.html",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "",
+    "text": "4.1 Learning outcomes\nAfter studying this chapter, you should be able to:\nThe ideal-gas equation of state, temperature and introductory equipartition were introduced in Chapter 3; this chapter develops their microscopic statistical foundation.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#learning-outcomes",
+    "href": "chapter-04-kinetic-theory.html#learning-outcomes",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "",
+    "text": "derive the pressure of a dilute gas from elastic molecular collisions with a wall;\ndistinguish velocity (a signed vector component) from speed (a non-negative magnitude);\nexplain the Boltzmann factor and the meaning and units of a probability density;\nderive the one-dimensional Maxwell–Boltzmann velocity distribution using Gaussian normalisation;\nobtain two- and three-dimensional speed distributions from the geometry of velocity space;\nexplain why the number of states is associated with the measure of a velocity-space shell, rather than a literal count of points;\ncalculate the mean, most probable and root-mean-square speeds, and connect the distributions to average kinetic energy.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#from-molecular-collisions-to-pressure",
+    "href": "chapter-04-kinetic-theory.html#from-molecular-collisions-to-pressure",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.2 From molecular collisions to pressure",
+    "text": "4.2 From molecular collisions to pressure\nAn ideal gas is modelled as a very large number of molecules undergoing random motion. For the simplest kinetic derivation, assume that molecules are point-like compared with their average separation, move freely between collisions, and collide elastically with the container walls. Intermolecular collisions redistribute velocities but do not alter the equilibrium result.\nConsider a rectangular container of length \\(L\\) in the \\(x\\) direction, with wall area \\(A\\) and volume \\(V=AL\\). A molecule of mass \\(m\\) approaches a wall with velocity component \\(v_x&gt;0\\). On elastic reflection, its \\(x\\) momentum changes from \\(mv_x\\) to \\(-mv_x\\), so the magnitude of momentum transferred to the wall is\n\\[\n\\Delta p_{\\mathrm{wall}}=2mv_x.\n\\]\nIf the molecule travels back and forth between opposite walls, the interval between successive collisions with the same wall is \\(\\Delta t=2L/v_x\\). Its mean force contribution is therefore\n\\[\nF_x=\\frac{2mv_x}{2L/v_x}=\\frac{mv_x^2}{L}.\n\\]\nFor \\(N\\) molecules with different velocities, the mean total force is\n\\[\nF=\\frac{m}{L}\\sum_{i=1}^{N}v_{x,i}^2\n  =\\frac{Nm}{L}\\langle v_x^2\\rangle.\n\\]\nDividing by the area gives\n\\[\nP=\\frac{F}{A}=\\frac{Nm}{V}\\langle v_x^2\\rangle.\n\\]\nRandom motion in an equilibrium gas is isotropic: no Cartesian direction is preferred. Consequently,\n\\[\n\\langle v_x^2\\rangle=\\langle v_y^2\\rangle=\\langle v_z^2\\rangle,\n\\qquad\n\\langle c^2\\rangle=3\\langle v_x^2\\rangle,\n\\]\nwhere \\(c=\\sqrt{v_x^2+v_y^2+v_z^2}\\) is the molecular speed. We obtain the fundamental kinetic-theory result\n\\[\n\\boxed{PV=\\frac13Nm\\langle c^2\\rangle.} \\tag{4.1}\n\\]\nComparing this with the ideal-gas equation \\(PV=Nk_{\\mathrm B}T\\) yields\n\\[\n\\boxed{\\frac12m\\langle c^2\\rangle=\\frac32k_{\\mathrm B}T.} \\tag{4.2}\n\\]\nThus the average translational kinetic energy of a molecule in a classical equilibrium gas is \\(3k_{\\mathrm B}T/2\\). The result does not imply that every molecule has the same speed.\n\n\n\n\n\n\nNoteWhat is being averaged?\n\n\n\nThe mean velocity component \\(\\langle v_x\\rangle\\) is zero in a stationary equilibrium gas because positive and negative velocities balance. The mean square \\(\\langle v_x^2\\rangle\\) is positive. Pressure depends on the latter, not the former.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#the-boltzmann-factor",
+    "href": "chapter-04-kinetic-theory.html#the-boltzmann-factor",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.3 The Boltzmann factor",
+    "text": "4.3 The Boltzmann factor\nAt thermal equilibrium, the relative statistical weight of a classical state with energy \\(E\\) is proportional to\n\\[\ne^{-E/(k_{\\mathrm B}T)}.\n\\]\nThe normalisation constant is determined by requiring the total probability to equal one. For a freely moving molecule,\n\\[\nE_{\\mathrm{kin}}=\\frac12m(v_x^2+v_y^2+v_z^2).\n\\]\nFor a gas in an external potential \\(U(\\mathbf r)\\), the energy is \\(E=E_{\\mathrm{kin}}+U(\\mathbf r)\\). When the kinetic and position-dependent parts separate, the equilibrium velocity distribution is still Maxwellian at a fixed temperature; the potential instead influences the spatial density.\n\n\n\n\n\n\nFigure 4.1: The Boltzmann factor decreases with increasing energy.\n\n\n\nThe Boltzmann factor alone is not the speed distribution. To obtain a speed distribution we must also account for the volume of velocity space corresponding to a given interval of speeds.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#probability-and-probability-density",
+    "href": "chapter-04-kinetic-theory.html#probability-and-probability-density",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.4 Probability and probability density",
+    "text": "4.4 Probability and probability density\nSpeed is a continuous variable. A probability-density function \\(f(c)\\) is defined so that\n\\[\n\\Pr(c_1\\leq c\\leq c_2)=\\int_{c_1}^{c_2}f(c)\\,dc.\n\\]\nFor a narrow interval, \\(dP=f(c)\\,dc\\). The density \\(f(c)\\) has units of inverse speed, \\(\\mathrm{s\\,m^{-1}}\\), while \\(dP\\) is dimensionless. For an ideal continuous distribution, the probability of any one exact speed is zero: \\(\\Pr(c=c_0)=0\\). This does not make that speed impossible; a nonzero probability belongs to a finite interval.\nThe same principle applies to a signed velocity component \\(v_x\\):\n\\[\n\\Pr(a\\leq v_x\\leq b)=\\int_a^b f_x(v_x)\\,dv_x.\n\\]\nGraph labelling: use Probability density on the vertical axis for both the 1D velocity distribution and the 2D/3D speed distributions. Label the horizontal axis Velocity component \\(v_x\\) for 1D and Speed \\(c\\) for 2D/3D.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#the-one-dimensional-maxwellboltzmann-velocity-distribution",
+    "href": "chapter-04-kinetic-theory.html#the-one-dimensional-maxwellboltzmann-velocity-distribution",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.5 The one-dimensional Maxwell–Boltzmann velocity distribution",
+    "text": "4.5 The one-dimensional Maxwell–Boltzmann velocity distribution\nFor motion in the \\(x\\) direction, the kinetic energy is \\(mv_x^2/2\\). The probability density therefore has the form\n\\[\nf_x(v_x)=A\\exp\\!\\left(-\\frac{mv_x^2}{2k_{\\mathrm B}T}\\right).\n\\]\nTo find \\(A\\), require \\(\\int_{-\\infty}^{\\infty}f_x(v_x)\\,dv_x=1\\). Using the standard Gaussian integral\n\\[\n\\int_{-\\infty}^{\\infty}e^{-\\alpha x^2}\\,dx=\\sqrt{\\frac{\\pi}{\\alpha}},\\qquad\\alpha&gt;0,\n\\]\nwith \\(\\alpha=m/(2k_{\\mathrm B}T)\\), we obtain\n\\[\n\\boxed{f_x(v_x)=\\sqrt{\\frac{m}{2\\pi k_{\\mathrm B}T}}\n\\exp\\!\\left(-\\frac{mv_x^2}{2k_{\\mathrm B}T}\\right).} \\tag{4.3}\n\\]\n\n\n\n\n\n\nFigure 4.2: One-dimensional Maxwell–Boltzmann distribution of a signed velocity component.\n\n\n\nThe distribution is Gaussian and symmetric about \\(v_x=0\\). Therefore \\(\\langle v_x\\rangle=0\\). To calculate the mean-square velocity, use\n\\[\n\\langle v_x^2\\rangle=\\int_{-\\infty}^{\\infty}v_x^2f_x(v_x)\\,dv_x.\n\\]\nWith\n\\[\n\\int_{-\\infty}^{\\infty}x^2e^{-\\alpha x^2}\\,dx\n=\\frac{\\sqrt\\pi}{2\\alpha^{3/2}},\n\\]\nwe find\n\\[\n\\boxed{\\langle v_x^2\\rangle=\\frac{k_{\\mathrm B}T}{m}},\n\\qquad\n\\boxed{\\frac12m\\langle v_x^2\\rangle=\\frac12k_{\\mathrm B}T.}\n\\]\nThis is one translational quadratic degree of freedom. The mean speed in one dimension is not \\(\\sqrt{\\langle v_x^2\\rangle}\\): the latter is a root-mean-square quantity. If we use \\(c=|v_x|\\) in 1D, the speed density is \\(f_{|v_x|}(c)=2f_x(c)\\) for \\(c\\geq0\\).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#two-dimensional-velocities-and-the-polar-coordinate-jacobian",
+    "href": "chapter-04-kinetic-theory.html#two-dimensional-velocities-and-the-polar-coordinate-jacobian",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.6 Two-dimensional velocities and the polar-coordinate Jacobian",
+    "text": "4.6 Two-dimensional velocities and the polar-coordinate Jacobian\nIn two dimensions, the joint velocity density is the product of two independent Gaussian component densities:\n\\[\np(v_x,v_y)=\\frac{m}{2\\pi k_{\\mathrm B}T}\n\\exp\\!\\left[-\\frac{m(v_x^2+v_y^2)}{2k_{\\mathrm B}T}\\right].\n\\]\nIntroduce polar coordinates in velocity space:\n\\[\nv_x=c\\cos\\theta,\\qquad v_y=c\\sin\\theta.\n\\]\nThe Jacobian matrix is\n\\[\nJ=\\begin{pmatrix}\n\\partial v_x/\\partial c & \\partial v_x/\\partial\\theta\\\\\n\\partial v_y/\\partial c & \\partial v_y/\\partial\\theta\n\\end{pmatrix}\n=\\begin{pmatrix}\n\\cos\\theta & -c\\sin\\theta\\\\\n\\sin\\theta & c\\cos\\theta\n\\end{pmatrix}.\n\\]\nIts determinant is \\(\\det J=c(\\cos^2\\theta+\\sin^2\\theta)=c\\), so\n\\[\n\\boxed{dv_x\\,dv_y=c\\,dc\\,d\\theta.} \\tag{4.4}\n\\]\nGeometrically, a thin annular sector has radial thickness \\(dc\\) and arc length \\(c\\,d\\theta\\), giving area \\(c\\,dc\\,d\\theta\\). Integrating over all directions, \\(0\\leq\\theta&lt;2\\pi\\), gives the area of a complete thin annulus:\n\\[\ndA=\\int_0^{2\\pi}c\\,dc\\,d\\theta=2\\pi c\\,dc.\n\\]\n\n\n\n\n\n\nFigure 4.3: Velocity states represented in two-dimensional velocity space.\n\n\n\n\n\n\n\n\n\nFigure 4.4: Geometrical weighting of a two-dimensional speed interval.\n\n\n\nThus the 2D speed probability density is\n\\[\n\\begin{aligned}\nf_{2\\mathrm D}(c)\n&=\\int_0^{2\\pi}p(c\\cos\\theta,c\\sin\\theta)c\\,d\\theta\\\\\n&=\\boxed{\\frac{m}{k_{\\mathrm B}T}c\n\\exp\\!\\left(-\\frac{mc^2}{2k_{\\mathrm B}T}\\right)},\\qquad c\\geq0.\n\\end{aligned} \\tag{4.5}\n\\]\n\n\n\n\n\n\nFigure 4.5: Two-dimensional Maxwell–Boltzmann speed distribution.\n\n\n\n\n\n\n\n\n\nImportantDoes a larger circle contain more points?\n\n\n\nEvery circle contains infinitely many points, and a one-to-one mapping exists between circles of different radii. The relevant concept is measure, not the cardinality of the sets of points. Equal-width annuli at larger speed occupy larger areas in velocity space. The Jacobian accounts for that area, and hence for the probability weight associated with a finite speed interval.\n\n\nFor two independent translational degrees of freedom, \\(\\langle c^2\\rangle=\\langle v_x^2\\rangle+\\langle v_y^2\\rangle=2k_{\\mathrm B}T/m\\), giving \\(\\langle E_{\\mathrm{kin}}\\rangle=k_{\\mathrm B}T\\).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#the-three-dimensional-maxwellboltzmann-speed-distribution",
+    "href": "chapter-04-kinetic-theory.html#the-three-dimensional-maxwellboltzmann-speed-distribution",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.7 The three-dimensional Maxwell–Boltzmann speed distribution",
+    "text": "4.7 The three-dimensional Maxwell–Boltzmann speed distribution\nIn three dimensions, the joint density is\n\\[\np(v_x,v_y,v_z)=\\left(\\frac{m}{2\\pi k_{\\mathrm B}T}\\right)^{3/2}\n\\exp\\!\\left[-\\frac{m(v_x^2+v_y^2+v_z^2)}{2k_{\\mathrm B}T}\\right].\n\\]\nNow use spherical polar coordinates in velocity space. The volume element is\n\\[\ndv_x\\,dv_y\\,dv_z=c^2\\sin\\theta\\,dc\\,d\\theta\\,d\\phi.\n\\]\nIntegration over all directions yields\n\\[\n\\int_0^{2\\pi}\\!d\\phi\\int_0^\\pi\\!\\sin\\theta\\,d\\theta=4\\pi.\n\\]\nThe thin spherical shell between speeds \\(c\\) and \\(c+dc\\) has velocity-space volume \\(4\\pi c^2dc\\). Hence\n\\[\n\\boxed{f_{3\\mathrm D}(c)=4\\pi\\left(\\frac{m}{2\\pi k_{\\mathrm B}T}\\right)^{3/2}\nc^2\\exp\\!\\left(-\\frac{mc^2}{2k_{\\mathrm B}T}\\right)},\\quad c\\geq0. \\tag{4.6}\n\\]\n\n\n\n\n\n\nFigure 4.6: The three Cartesian velocity components and the molecular speed.\n\n\n\n\n\n\n\n\n\nFigure 4.7: Three-dimensional Maxwell–Boltzmann speed distribution.\n\n\n\nThe \\(c^2\\) factor comes from the growing shell volume; the exponential factor suppresses high kinetic energies. Their competition produces a maximum at a nonzero speed. Increasing temperature broadens the distribution and shifts the maximum to higher speed while preserving total area equal to one.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#three-characteristic-molecular-speeds",
+    "href": "chapter-04-kinetic-theory.html#three-characteristic-molecular-speeds",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.8 Three characteristic molecular speeds",
+    "text": "4.8 Three characteristic molecular speeds\nThe most probable speed is the location of the maximum of \\(f_{3\\mathrm D}(c)\\). Since constants do not affect the maximum, differentiate \\(c^2e^{-mc^2/(2k_{\\mathrm B}T)}\\):\n\\[\n\\frac{d}{dc}\\left(c^2e^{-mc^2/(2k_{\\mathrm B}T)}\\right)\n=e^{-mc^2/(2k_{\\mathrm B}T)}\\left(2c-\\frac{mc^3}{k_{\\mathrm B}T}\\right).\n\\]\nThe nonzero stationary point is\n\\[\n\\boxed{c_{\\mathrm{mp}}=\\sqrt{\\frac{2k_{\\mathrm B}T}{m}}.} \\tag{4.7}\n\\]\nThe mean speed is the expectation \\(\\langle c\\rangle=\\int_0^\\infty cf_{3\\mathrm D}(c)\\,dc\\):\n\\[\n\\boxed{\\langle c\\rangle=\\sqrt{\\frac{8k_{\\mathrm B}T}{\\pi m}}.} \\tag{4.8}\n\\]\nThe root-mean-square speed is obtained from the average of the square:\n\\[\n\\boxed{c_{\\mathrm{rms}}=\\sqrt{\\langle c^2\\rangle}\n=\\sqrt{\\frac{3k_{\\mathrm B}T}{m}}.} \\tag{4.9}\n\\]\nThus\n\\[\nc_{\\mathrm{mp}}&lt;\\langle c\\rangle&lt;c_{\\mathrm{rms}}.\n\\]\nAll three scale as \\(\\sqrt{T/m}\\). A lighter molecule at the same temperature typically moves faster.\n\n4.8.1 Worked example: nitrogen at room temperature\nFor nitrogen molecules, take \\(m=28u\\approx4.65\\times10^{-26}\\,\\mathrm{kg}\\) and \\(T=300\\,\\mathrm K\\), with \\(k_{\\mathrm B}=1.380649\\times10^{-23}\\,\\mathrm{J\\,K^{-1}}\\). Then\n\\[\nc_{\\mathrm{mp}}\\approx422\\,\\mathrm{m\\,s^{-1}},\\quad\n\\langle c\\rangle\\approx476\\,\\mathrm{m\\,s^{-1}},\\quad\nc_{\\mathrm{rms}}\\approx517\\,\\mathrm{m\\,s^{-1}}.\n\\]\nThese values describe different statistical summaries of the same distribution. None represents the speed of every molecule.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#interpreting-the-distributions-and-their-limits",
+    "href": "chapter-04-kinetic-theory.html#interpreting-the-distributions-and-their-limits",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.9 Interpreting the distributions and their limits",
+    "text": "4.9 Interpreting the distributions and their limits\n\nThe 1D velocity component density is a symmetric Gaussian, with its maximum at zero.\nThe 2D and 3D speed densities are zero at \\(c=0\\) because a vanishingly small annulus or spherical shell has vanishing measure there.\nThe 2D and 3D curves are not Gaussian distributions of speed.\nThe Maxwell–Boltzmann model applies to a classical, non-relativistic gas in thermal equilibrium. Quantum-degenerate gases require Bose–Einstein or Fermi–Dirac statistics; sufficiently high speeds require a relativistic treatment.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#problems",
+    "href": "chapter-04-kinetic-theory.html#problems",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.10 Problems",
+    "text": "4.10 Problems\n\nPressure from collisions. A dilute monatomic gas contains \\(N\\) molecules of mass \\(m\\) in volume \\(V\\). Derive \\(PV=Nm\\langle c^2\\rangle/3\\) by considering momentum transfer to a wall. State explicitly where isotropy enters.\nGaussian normalisation. Starting with \\(f_x(v_x)=Ae^{-mv_x^2/(2k_{\\mathrm B}T)}\\), determine \\(A\\) and show that \\(\\langle v_x^2\\rangle=k_{\\mathrm B}T/m\\).\nSpeed versus velocity. Explain why the 1D velocity-component distribution has its maximum at \\(v_x=0\\), whereas the 3D speed distribution has its maximum at a nonzero \\(c\\).\nJacobian. Derive \\(dv_xdv_y=c\\,dc\\,d\\theta\\) and use it to obtain the 2D speed distribution. Explain why a one-to-one mapping between circles does not invalidate the annular-area argument.\nMost probable speed. Differentiate the 3D speed density to obtain \\(c_{\\mathrm{mp}}\\). Compare it with \\(c_{\\mathrm{rms}}\\).\nTemperature scaling. By what factor do \\(c_{\\mathrm{mp}}\\), \\(\\langle c\\rangle\\) and \\(c_{\\mathrm{rms}}\\) change when absolute temperature is quadrupled?\nProbability interval. Write the integral that gives the probability of a nitrogen molecule at \\(300\\,\\mathrm K\\) having speed between \\(300\\) and \\(500\\,\\mathrm{m\\,s^{-1}}\\). Explain why the vertical-axis label must be probability density rather than probability.\n\nWorked solutions are available separately.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
+  },
+  {
+    "objectID": "chapter-04-kinetic-theory.html#further-reading",
+    "href": "chapter-04-kinetic-theory.html#further-reading",
+    "title": "4  Kinetic Theory of Gases",
+    "section": "4.11 Further reading",
+    "text": "4.11 Further reading\nFor the statistical-mechanical background, consult the sections on the Boltzmann distribution, ideal gases and molecular speeds in Blundell & Blundell, Concepts in Thermal Physics, or Kittel & Kroemer, Thermal Physics.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Kinetic Theory of Gases</span>"
+    ]
   }
 ]
