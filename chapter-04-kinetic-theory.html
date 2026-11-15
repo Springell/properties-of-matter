@@ -184,17 +184,25 @@ window.Quarto = {
   <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes"><span class="header-section-number">4.1</span> Learning outcomes</a></li>
   <li><a href="#from-molecular-collisions-to-pressure" id="toc-from-molecular-collisions-to-pressure" class="nav-link" data-scroll-target="#from-molecular-collisions-to-pressure"><span class="header-section-number">4.2</span> From molecular collisions to pressure</a></li>
   <li><a href="#the-boltzmann-factor" id="toc-the-boltzmann-factor" class="nav-link" data-scroll-target="#the-boltzmann-factor"><span class="header-section-number">4.3</span> The Boltzmann factor</a></li>
-  <li><a href="#probability-and-probability-density" id="toc-probability-and-probability-density" class="nav-link" data-scroll-target="#probability-and-probability-density"><span class="header-section-number">4.4</span> Probability and probability density</a></li>
+  <li><a href="#from-energy-to-a-distribution-of-molecular-velocities" id="toc-from-energy-to-a-distribution-of-molecular-velocities" class="nav-link" data-scroll-target="#from-energy-to-a-distribution-of-molecular-velocities"><span class="header-section-number">4.4</span> From energy to a distribution of molecular velocities</a></li>
   <li><a href="#the-one-dimensional-maxwellboltzmann-velocity-distribution" id="toc-the-one-dimensional-maxwellboltzmann-velocity-distribution" class="nav-link" data-scroll-target="#the-one-dimensional-maxwellboltzmann-velocity-distribution"><span class="header-section-number">4.5</span> The one-dimensional Maxwell–Boltzmann velocity distribution</a></li>
-  <li><a href="#two-dimensional-velocities-and-the-polar-coordinate-jacobian" id="toc-two-dimensional-velocities-and-the-polar-coordinate-jacobian" class="nav-link" data-scroll-target="#two-dimensional-velocities-and-the-polar-coordinate-jacobian"><span class="header-section-number">4.6</span> Two-dimensional velocities and the polar-coordinate Jacobian</a></li>
-  <li><a href="#the-three-dimensional-maxwellboltzmann-speed-distribution" id="toc-the-three-dimensional-maxwellboltzmann-speed-distribution" class="nav-link" data-scroll-target="#the-three-dimensional-maxwellboltzmann-speed-distribution"><span class="header-section-number">4.7</span> The three-dimensional Maxwell–Boltzmann speed distribution</a></li>
+  <li><a href="#the-maxwellboltzmann-distribution-in-two-dimensions" id="toc-the-maxwellboltzmann-distribution-in-two-dimensions" class="nav-link" data-scroll-target="#the-maxwellboltzmann-distribution-in-two-dimensions"><span class="header-section-number">4.6</span> The Maxwell–Boltzmann distribution in two dimensions</a></li>
+  <li><a href="#the-maxwellboltzmann-distribution-in-three-dimensions" id="toc-the-maxwellboltzmann-distribution-in-three-dimensions" class="nav-link" data-scroll-target="#the-maxwellboltzmann-distribution-in-three-dimensions"><span class="header-section-number">4.7</span> The Maxwell–Boltzmann distribution in three dimensions</a></li>
   <li><a href="#three-characteristic-molecular-speeds" id="toc-three-characteristic-molecular-speeds" class="nav-link" data-scroll-target="#three-characteristic-molecular-speeds"><span class="header-section-number">4.8</span> Three characteristic molecular speeds</a>
   <ul class="collapse">
   <li><a href="#worked-example-nitrogen-at-room-temperature" id="toc-worked-example-nitrogen-at-room-temperature" class="nav-link" data-scroll-target="#worked-example-nitrogen-at-room-temperature"><span class="header-section-number">4.8.1</span> Worked example: nitrogen at room temperature</a></li>
   </ul></li>
   <li><a href="#interpreting-the-distributions-and-their-limits" id="toc-interpreting-the-distributions-and-their-limits" class="nav-link" data-scroll-target="#interpreting-the-distributions-and-their-limits"><span class="header-section-number">4.9</span> Interpreting the distributions and their limits</a></li>
   <li><a href="#problems" id="toc-problems" class="nav-link" data-scroll-target="#problems"><span class="header-section-number">4.10</span> Problems</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">4.11</span> Further reading</a></li>
+  <li><a href="#sec-ch4-appendix-density" id="toc-sec-ch4-appendix-density" class="nav-link" data-scroll-target="#sec-ch4-appendix-density"><span class="header-section-number">4.11</span> Appendix: Probability densities and polar coordinates</a>
+  <ul class="collapse">
+  <li><a href="#probability-versus-probability-density" id="toc-probability-versus-probability-density" class="nav-link" data-scroll-target="#probability-versus-probability-density"><span class="header-section-number">4.11.1</span> Probability versus probability density</a></li>
+  <li><a href="#two-dimensions-the-polar-coordinate-jacobian" id="toc-two-dimensions-the-polar-coordinate-jacobian" class="nav-link" data-scroll-target="#two-dimensions-the-polar-coordinate-jacobian"><span class="header-section-number">4.11.2</span> Two dimensions: the polar-coordinate Jacobian</a></li>
+  <li><a href="#three-dimensions-the-spherical-polar-volume-element" id="toc-three-dimensions-the-spherical-polar-volume-element" class="nav-link" data-scroll-target="#three-dimensions-the-spherical-polar-volume-element"><span class="header-section-number">4.11.3</span> Three dimensions: the spherical-polar volume element</a></li>
+  <li><a href="#why-a-larger-circle-does-not-have-more-points" id="toc-why-a-larger-circle-does-not-have-more-points" class="nav-link" data-scroll-target="#why-a-larger-circle-does-not-have-more-points"><span class="header-section-number">4.11.4</span> Why a larger circle does not have “more points”</a></li>
+  <li><a href="#optional-appendix-problem" id="toc-optional-appendix-problem" class="nav-link" data-scroll-target="#optional-appendix-problem"><span class="header-section-number">4.11.5</span> Optional appendix problem</a></li>
+  </ul></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading"><span class="header-section-number">4.12</span> Further reading</a></li>
   </ul>
 </nav>
     </div>
@@ -226,10 +234,10 @@ window.Quarto = {
 <ul>
 <li>derive the pressure of a dilute gas from elastic molecular collisions with a wall;</li>
 <li>distinguish <strong>velocity</strong> (a signed vector component) from <strong>speed</strong> (a non-negative magnitude);</li>
-<li>explain the Boltzmann factor and the meaning and units of a probability density;</li>
+<li>explain the Boltzmann factor and the physical meaning of the Maxwell–Boltzmann distributions;</li>
 <li>derive the one-dimensional Maxwell–Boltzmann velocity distribution using Gaussian normalisation;</li>
-<li>obtain two- and three-dimensional speed distributions from the geometry of velocity space;</li>
-<li>explain why the number of states is associated with the <em>measure</em> of a velocity-space shell, rather than a literal count of points;</li>
+<li>derive the two- and three-dimensional speed distributions using circular annuli and spherical shells in velocity space;</li>
+<li>recognise that a more rigorous treatment of continuous probability and velocity-space geometry is given in the appendix;</li>
 <li>calculate the mean, most probable and root-mean-square speeds, and connect the distributions to average kinetic energy.</li>
 </ul>
 <p>The ideal-gas equation of state, temperature and introductory equipartition were introduced in Chapter 3; this chapter develops their microscopic statistical foundation.</p>
@@ -306,18 +314,10 @@ Figure&nbsp;4.1: The Boltzmann factor decreases with increasing energy.
 </div>
 <p>The Boltzmann factor alone is <strong>not</strong> the speed distribution. To obtain a speed distribution we must also account for the volume of velocity space corresponding to a given interval of speeds.</p>
 </section>
-<section id="probability-and-probability-density" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="probability-and-probability-density"><span class="header-section-number">4.4</span> Probability and probability density</h2>
-<p>Speed is a continuous variable. A probability-density function <span class="math inline">\(f(c)\)</span> is defined so that</p>
-<p><span class="math display">\[
-\Pr(c_1\leq c\leq c_2)=\int_{c_1}^{c_2}f(c)\,dc.
-\]</span></p>
-<p>For a narrow interval, <span class="math inline">\(dP=f(c)\,dc\)</span>. The density <span class="math inline">\(f(c)\)</span> has units of inverse speed, <span class="math inline">\(\mathrm{s\,m^{-1}}\)</span>, while <span class="math inline">\(dP\)</span> is dimensionless. For an ideal continuous distribution, the probability of any <strong>one exact speed</strong> is zero: <span class="math inline">\(\Pr(c=c_0)=0\)</span>. This does not make that speed impossible; a nonzero probability belongs to a finite interval.</p>
-<p>The same principle applies to a signed velocity component <span class="math inline">\(v_x\)</span>:</p>
-<p><span class="math display">\[
-\Pr(a\leq v_x\leq b)=\int_a^b f_x(v_x)\,dv_x.
-\]</span></p>
-<p><strong>Graph labelling:</strong> use <em>Probability density</em> on the vertical axis for both the 1D velocity distribution and the 2D/3D speed distributions. Label the horizontal axis <em>Velocity component <span class="math inline">\(v_x\)</span></em> for 1D and <em>Speed <span class="math inline">\(c\)</span></em> for 2D/3D.</p>
+<section id="from-energy-to-a-distribution-of-molecular-velocities" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="from-energy-to-a-distribution-of-molecular-velocities"><span class="header-section-number">4.4</span> From energy to a distribution of molecular velocities</h2>
+<p>The Boltzmann factor gives the relative weighting of different molecular energies. To describe molecular motion, we substitute the kinetic energy in terms of the velocity components. The resulting distribution must be normalised so that its total probability is one. We shall first consider motion along one direction, then extend the argument to two and three dimensions by considering the geometrical arrangement of velocities with the same speed.</p>
+<p>The curves below describe <strong>distributions</strong>, not a single velocity shared by every molecule. Their vertical axes are labelled <em>probability density</em>: the probability of a range of velocities or speeds is represented by the area under the corresponding curve. A fuller explanation of this distinction is provided in <a href="#sec-ch4-appendix-density" class="quarto-xref"><span>Section 4.11</span></a>.</p>
 </section>
 <section id="the-one-dimensional-maxwellboltzmann-velocity-distribution" class="level2" data-number="4.5">
 <h2 data-number="4.5" class="anchored" data-anchor-id="the-one-dimensional-maxwellboltzmann-velocity-distribution"><span class="header-section-number">4.5</span> The one-dimensional Maxwell–Boltzmann velocity distribution</h2>
@@ -361,64 +361,52 @@ Figure&nbsp;4.2: One-dimensional Maxwell–Boltzmann distribution of a signed ve
 \]</span></p>
 <p>This is one translational quadratic degree of freedom. <strong>The mean speed in one dimension is not <span class="math inline">\(\sqrt{\langle v_x^2\rangle}\)</span></strong>: the latter is a root-mean-square quantity. If we use <span class="math inline">\(c=|v_x|\)</span> in 1D, the speed density is <span class="math inline">\(f_{|v_x|}(c)=2f_x(c)\)</span> for <span class="math inline">\(c\geq0\)</span>.</p>
 </section>
-<section id="two-dimensional-velocities-and-the-polar-coordinate-jacobian" class="level2" data-number="4.6">
-<h2 data-number="4.6" class="anchored" data-anchor-id="two-dimensional-velocities-and-the-polar-coordinate-jacobian"><span class="header-section-number">4.6</span> Two-dimensional velocities and the polar-coordinate Jacobian</h2>
-<p>In two dimensions, the joint velocity density is the product of two independent Gaussian component densities:</p>
+<section id="the-maxwellboltzmann-distribution-in-two-dimensions" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="the-maxwellboltzmann-distribution-in-two-dimensions"><span class="header-section-number">4.6</span> The Maxwell–Boltzmann distribution in two dimensions</h2>
+<p>Consider a molecule moving in a plane, with perpendicular velocity components <span class="math inline">\(v_x\)</span> and <span class="math inline">\(v_y\)</span>. Its kinetic energy is</p>
+<p><span class="math display">\[
+E_{\mathrm{kin}}=\frac12m(v_x^2+v_y^2)=\frac12mc^2,
+\]</span></p>
+<p>where <span class="math inline">\(c=\sqrt{v_x^2+v_y^2}\)</span> is the <strong>speed</strong>. The two components are independent, so their joint distribution is the product of the corresponding one-dimensional distributions:</p>
 <p><span class="math display">\[
 p(v_x,v_y)=\frac{m}{2\pi k_{\mathrm B}T}
 \exp\!\left[-\frac{m(v_x^2+v_y^2)}{2k_{\mathrm B}T}\right].
 \]</span></p>
-<p>Introduce polar coordinates in velocity space:</p>
-<p><span class="math display">\[
-v_x=c\cos\theta,\qquad v_y=c\sin\theta.
-\]</span></p>
-<p>The Jacobian matrix is</p>
-<p><span class="math display">\[
-J=\begin{pmatrix}
-\partial v_x/\partial c &amp; \partial v_x/\partial\theta\\
-\partial v_y/\partial c &amp; \partial v_y/\partial\theta
-\end{pmatrix}
-=\begin{pmatrix}
-\cos\theta &amp; -c\sin\theta\\
-\sin\theta &amp; c\cos\theta
-\end{pmatrix}.
-\]</span></p>
-<p>Its determinant is <span class="math inline">\(\det J=c(\cos^2\theta+\sin^2\theta)=c\)</span>, so</p>
-<p><span class="math display">\[
-\boxed{dv_x\,dv_y=c\,dc\,d\theta.} \tag{4.4}
-\]</span></p>
-<p>Geometrically, a thin annular sector has radial thickness <span class="math inline">\(dc\)</span> and arc length <span class="math inline">\(c\,d\theta\)</span>, giving area <span class="math inline">\(c\,dc\,d\theta\)</span>. Integrating over all directions, <span class="math inline">\(0\leq\theta&lt;2\pi\)</span>, gives the area of a complete thin annulus:</p>
-<p><span class="math display">\[
-dA=\int_0^{2\pi}c\,dc\,d\theta=2\pi c\,dc.
-\]</span></p>
+<p>The key step is to recognise that <strong>many different directions of motion correspond to the same speed</strong>. In a diagram with <span class="math inline">\(v_x\)</span> and <span class="math inline">\(v_y\)</span> as the axes, all velocities of magnitude <span class="math inline">\(c\)</span> lie on a circle of radius <span class="math inline">\(c\)</span>. Velocities with speeds between <span class="math inline">\(c\)</span> and <span class="math inline">\(c+dc\)</span> occupy a thin <em>annulus</em> (ring).</p>
 <div id="fig-ch4-states2d" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch4-states2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/Velocity_states_2D.svg" class="img-fluid figure-img" style="width:76.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch4-states2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.3: Velocity states represented in two-dimensional velocity space.
+Figure&nbsp;4.3: Velocity vectors with the same speed occupy a circle in two-dimensional velocity space.
 </figcaption>
 </figure>
 </div>
+<p>For a narrow annulus, its area is approximately the circumference multiplied by the thickness:</p>
+<p><span class="math display">\[
+\text{area of annulus}=2\pi c\,dc.
+\]</span></p>
 <div id="fig-ch4-prob2d" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch4-prob2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="figures/Prob_2D.svg" class="img-fluid figure-img" style="width:76.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch4-prob2d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.4: Geometrical weighting of a two-dimensional speed interval.
+Figure&nbsp;4.4: The thin annulus represents a small interval of molecular speeds.
 </figcaption>
 </figure>
 </div>
-<p>Thus the <strong>2D speed probability density</strong> is</p>
+<p>The Boltzmann weighting is the same everywhere on this annulus because the kinetic energy depends only on <span class="math inline">\(c^2\)</span>. Multiplying that weighting by the annular area gives the probability associated with a narrow range of speeds:</p>
 <p><span class="math display">\[
-\begin{aligned}
-f_{2\mathrm D}(c)
-&amp;=\int_0^{2\pi}p(c\cos\theta,c\sin\theta)c\,d\theta\\
-&amp;=\boxed{\frac{m}{k_{\mathrm B}T}c
-\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)},\qquad c\geq0.
-\end{aligned} \tag{4.5}
+dP=\frac{m}{2\pi k_{\mathrm B}T}
+\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)
+(2\pi c\,dc).
+\]</span></p>
+<p>Consequently, the <strong>two-dimensional Maxwell–Boltzmann speed distribution</strong> is</p>
+<p><span class="math display">\[
+\boxed{f_{2\mathrm D}(c)=\frac{m}{k_{\mathrm B}T}\,c\,
+\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)},\qquad c\geq0. \tag{4.4}
 \]</span></p>
 <div id="fig-ch4-mb2d" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -430,40 +418,19 @@ Figure&nbsp;4.5: Two-dimensional Maxwell–Boltzmann speed distribution.
 </figcaption>
 </figure>
 </div>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Does a larger circle contain more points?
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Every circle contains infinitely many points, and a one-to-one mapping exists between circles of different radii. The relevant concept is <strong>measure</strong>, not the cardinality of the sets of points. Equal-width annuli at larger speed occupy larger areas in velocity space. The Jacobian accounts for that area, and hence for the probability weight associated with a finite speed interval.</p>
-</div>
-</div>
-<p>For two independent translational degrees of freedom, <span class="math inline">\(\langle c^2\rangle=\langle v_x^2\rangle+\langle v_y^2\rangle=2k_{\mathrm B}T/m\)</span>, giving <span class="math inline">\(\langle E_{\mathrm{kin}}\rangle=k_{\mathrm B}T\)</span>.</p>
+<p>Notice the additional factor of <span class="math inline">\(c\)</span> compared with the Boltzmann exponential alone. This arises from the increasing circumference of the annulus as the speed increases. The geometrical reasoning is sufficient for the present derivation; the precise treatment using probability densities and a polar-coordinate Jacobian is developed in <a href="#sec-ch4-appendix-density" class="quarto-xref"><span>Section 4.11</span></a>.</p>
+<p>For two translational degrees of freedom, <span class="math inline">\(\langle c^2\rangle=\langle v_x^2\rangle+\langle v_y^2\rangle=2k_{\mathrm B}T/m\)</span>, so the average kinetic energy is <span class="math inline">\(\langle E_{\mathrm{kin}}\rangle=k_{\mathrm B}T\)</span>.</p>
 </section>
-<section id="the-three-dimensional-maxwellboltzmann-speed-distribution" class="level2" data-number="4.7">
-<h2 data-number="4.7" class="anchored" data-anchor-id="the-three-dimensional-maxwellboltzmann-speed-distribution"><span class="header-section-number">4.7</span> The three-dimensional Maxwell–Boltzmann speed distribution</h2>
-<p>In three dimensions, the joint density is</p>
+<section id="the-maxwellboltzmann-distribution-in-three-dimensions" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="the-maxwellboltzmann-distribution-in-three-dimensions"><span class="header-section-number">4.7</span> The Maxwell–Boltzmann distribution in three dimensions</h2>
+<p>In three dimensions the velocity has components <span class="math inline">\(v_x\)</span>, <span class="math inline">\(v_y\)</span> and <span class="math inline">\(v_z\)</span>, with</p>
+<p><span class="math display">\[
+c^2=v_x^2+v_y^2+v_z^2.
+\]</span></p>
+<p>Multiplying the three independent one-dimensional distributions gives</p>
 <p><span class="math display">\[
 p(v_x,v_y,v_z)=\left(\frac{m}{2\pi k_{\mathrm B}T}\right)^{3/2}
-\exp\!\left[-\frac{m(v_x^2+v_y^2+v_z^2)}{2k_{\mathrm B}T}\right].
-\]</span></p>
-<p>Now use spherical polar coordinates in velocity space. The volume element is</p>
-<p><span class="math display">\[
-dv_x\,dv_y\,dv_z=c^2\sin\theta\,dc\,d\theta\,d\phi.
-\]</span></p>
-<p>Integration over all directions yields</p>
-<p><span class="math display">\[
-\int_0^{2\pi}\!d\phi\int_0^\pi\!\sin\theta\,d\theta=4\pi.
-\]</span></p>
-<p>The thin spherical shell between speeds <span class="math inline">\(c\)</span> and <span class="math inline">\(c+dc\)</span> has velocity-space volume <span class="math inline">\(4\pi c^2dc\)</span>. Hence</p>
-<p><span class="math display">\[
-\boxed{f_{3\mathrm D}(c)=4\pi\left(\frac{m}{2\pi k_{\mathrm B}T}\right)^{3/2}
-c^2\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)},\quad c\geq0. \tag{4.6}
+\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right).
 \]</span></p>
 <div id="fig-ch4-components" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -471,10 +438,25 @@ c^2\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)},\quad c\geq0. \tag{4.6}
 <img src="figures/MB_3D_components.svg" class="img-fluid figure-img" style="width:75.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch4-components-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.6: The three Cartesian velocity components and the molecular speed.
+Figure&nbsp;4.6: The three Cartesian velocity components combine to give the molecular speed.
 </figcaption>
 </figure>
 </div>
+<p>In three-dimensional velocity space, all vectors of speed <span class="math inline">\(c\)</span> lie on the surface of a sphere of radius <span class="math inline">\(c\)</span>. A narrow range of speeds, from <span class="math inline">\(c\)</span> to <span class="math inline">\(c+dc\)</span>, corresponds to a <strong>thin spherical shell</strong>. Its volume is approximately its surface area multiplied by its thickness:</p>
+<p><span class="math display">\[
+\text{volume of shell}=4\pi c^2\,dc.
+\]</span></p>
+<p>Therefore the probability for a molecule to have speed in this narrow interval is</p>
+<p><span class="math display">\[
+dP=\left(\frac{m}{2\pi k_{\mathrm B}T}\right)^{3/2}
+\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)
+(4\pi c^2\,dc).
+\]</span></p>
+<p>Dividing by <span class="math inline">\(dc\)</span> gives the <strong>three-dimensional Maxwell–Boltzmann speed distribution</strong>:</p>
+<p><span class="math display">\[
+\boxed{f_{3\mathrm D}(c)=4\pi\left(\frac{m}{2\pi k_{\mathrm B}T}\right)^{3/2}
+c^2\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right)},\qquad c\geq0. \tag{4.5}
+\]</span></p>
 <div id="fig-ch4-mb3d" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ch4-mb3d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -485,7 +467,20 @@ Figure&nbsp;4.7: Three-dimensional Maxwell–Boltzmann speed distribution.
 </figcaption>
 </figure>
 </div>
-<p>The <span class="math inline">\(c^2\)</span> factor comes from the growing shell volume; the exponential factor suppresses high kinetic energies. Their competition produces a maximum at a nonzero speed. Increasing temperature broadens the distribution and shifts the maximum to higher speed while preserving total area equal to one.</p>
+<p>The <span class="math inline">\(c^2\)</span> term reflects the increasing volume of the spherical shell, whereas the exponential suppresses high kinetic energies. Together they produce a maximum at a nonzero speed. At higher temperatures the distribution becomes broader and the maximum moves to higher speed; the total area beneath the curve remains one.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What does the shell argument mean?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The annulus and spherical shell are ways of grouping velocities with <strong>similar speeds</strong>, rather than counting individual velocity vectors. The distinction matters because velocity is continuous. The appendix explains this more carefully without changing the simple geometrical derivation used here.</p>
+</div>
+</div>
 </section>
 <section id="three-characteristic-molecular-speeds" class="level2" data-number="4.8">
 <h2 data-number="4.8" class="anchored" data-anchor-id="three-characteristic-molecular-speeds"><span class="header-section-number">4.8</span> Three characteristic molecular speeds</h2>
@@ -496,16 +491,16 @@ Figure&nbsp;4.7: Three-dimensional Maxwell–Boltzmann speed distribution.
 \]</span></p>
 <p>The nonzero stationary point is</p>
 <p><span class="math display">\[
-\boxed{c_{\mathrm{mp}}=\sqrt{\frac{2k_{\mathrm B}T}{m}}.} \tag{4.7}
+\boxed{c_{\mathrm{mp}}=\sqrt{\frac{2k_{\mathrm B}T}{m}}.} \tag{4.6}
 \]</span></p>
 <p>The <strong>mean speed</strong> is the expectation <span class="math inline">\(\langle c\rangle=\int_0^\infty cf_{3\mathrm D}(c)\,dc\)</span>:</p>
 <p><span class="math display">\[
-\boxed{\langle c\rangle=\sqrt{\frac{8k_{\mathrm B}T}{\pi m}}.} \tag{4.8}
+\boxed{\langle c\rangle=\sqrt{\frac{8k_{\mathrm B}T}{\pi m}}.} \tag{4.7}
 \]</span></p>
 <p>The <strong>root-mean-square speed</strong> is obtained from the average of the square:</p>
 <p><span class="math display">\[
 \boxed{c_{\mathrm{rms}}=\sqrt{\langle c^2\rangle}
-=\sqrt{\frac{3k_{\mathrm B}T}{m}}.} \tag{4.9}
+=\sqrt{\frac{3k_{\mathrm B}T}{m}}.} \tag{4.8}
 \]</span></p>
 <p>Thus</p>
 <p><span class="math display">\[
@@ -538,15 +533,103 @@ c_{\mathrm{rms}}\approx517\,\mathrm{m\,s^{-1}}.
 <li><strong>Pressure from collisions.</strong> A dilute monatomic gas contains <span class="math inline">\(N\)</span> molecules of mass <span class="math inline">\(m\)</span> in volume <span class="math inline">\(V\)</span>. Derive <span class="math inline">\(PV=Nm\langle c^2\rangle/3\)</span> by considering momentum transfer to a wall. State explicitly where isotropy enters.</li>
 <li><strong>Gaussian normalisation.</strong> Starting with <span class="math inline">\(f_x(v_x)=Ae^{-mv_x^2/(2k_{\mathrm B}T)}\)</span>, determine <span class="math inline">\(A\)</span> and show that <span class="math inline">\(\langle v_x^2\rangle=k_{\mathrm B}T/m\)</span>.</li>
 <li><strong>Speed versus velocity.</strong> Explain why the 1D velocity-component distribution has its maximum at <span class="math inline">\(v_x=0\)</span>, whereas the 3D speed distribution has its maximum at a nonzero <span class="math inline">\(c\)</span>.</li>
-<li><strong>Jacobian.</strong> Derive <span class="math inline">\(dv_xdv_y=c\,dc\,d\theta\)</span> and use it to obtain the 2D speed distribution. Explain why a one-to-one mapping between circles does not invalidate the annular-area argument.</li>
+<li><strong>Velocity-space geometry.</strong> Explain why the area of a thin annulus is <span class="math inline">\(2\pi c\,dc\)</span> and the volume of a thin spherical shell is <span class="math inline">\(4\pi c^2\,dc\)</span>. Use these results to explain the different powers of <span class="math inline">\(c\)</span> in the 2D and 3D distributions.</li>
 <li><strong>Most probable speed.</strong> Differentiate the 3D speed density to obtain <span class="math inline">\(c_{\mathrm{mp}}\)</span>. Compare it with <span class="math inline">\(c_{\mathrm{rms}}\)</span>.</li>
 <li><strong>Temperature scaling.</strong> By what factor do <span class="math inline">\(c_{\mathrm{mp}}\)</span>, <span class="math inline">\(\langle c\rangle\)</span> and <span class="math inline">\(c_{\mathrm{rms}}\)</span> change when absolute temperature is quadrupled?</li>
-<li><strong>Probability interval.</strong> Write the integral that gives the probability of a nitrogen molecule at <span class="math inline">\(300\,\mathrm K\)</span> having speed between <span class="math inline">\(300\)</span> and <span class="math inline">\(500\,\mathrm{m\,s^{-1}}\)</span>. Explain why the vertical-axis label must be <em>probability density</em> rather than <em>probability</em>.</li>
+<li><strong>Speed interval.</strong> Write the integral that gives the probability of a nitrogen molecule at <span class="math inline">\(300\,\mathrm K\)</span> having speed between <span class="math inline">\(300\)</span> and <span class="math inline">\(500\,\mathrm{m\,s^{-1}}\)</span>. Explain what the area under the distribution represents.</li>
 </ol>
 <p>Worked solutions are available separately.</p>
 </section>
-<section id="further-reading" class="level2" data-number="4.11">
-<h2 data-number="4.11" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">4.11</span> Further reading</h2>
+<section id="sec-ch4-appendix-density" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="sec-ch4-appendix-density"><span class="header-section-number">4.11</span> Appendix: Probability densities and polar coordinates</h2>
+<p>This appendix provides a more rigorous account of the geometry used to derive the two- and three-dimensional Maxwell–Boltzmann speed distributions. It is <strong>supplementary</strong> to the main chapter: the annulus and spherical-shell arguments above are sufficient for the core derivations.</p>
+<section id="probability-versus-probability-density" class="level3" data-number="4.11.1">
+<h3 data-number="4.11.1" class="anchored" data-anchor-id="probability-versus-probability-density"><span class="header-section-number">4.11.1</span> Probability versus probability density</h3>
+<p>A continuous variable, such as speed <span class="math inline">\(c\)</span>, is described by a <em>probability density</em> <span class="math inline">\(f(c)\)</span> rather than a probability assigned to each individual speed. For a finite interval,</p>
+<p><span class="math display">\[
+\Pr(c_1\leq c\leq c_2)=\int_{c_1}^{c_2}f(c)\,dc,
+\qquad \int_0^\infty f(c)\,dc=1.
+\]</span></p>
+<p>For a very narrow interval, <span class="math inline">\(dP=f(c)\,dc\)</span>. The probability <span class="math inline">\(dP\)</span> is dimensionless, so <span class="math inline">\(f(c)\)</span> has units of inverse speed, <span class="math inline">\(\mathrm{s\,m^{-1}}\)</span>. The probability of any <em>one exact value</em> of a continuous speed is zero; a nonzero probability is associated with an interval of speeds. Similarly, the signed velocity component <span class="math inline">\(v_x\)</span> has a density <span class="math inline">\(f_x(v_x)\)</span>, integrated over <span class="math inline">\(-\infty&lt;v_x&lt;\infty\)</span>.</p>
+<p>The 1D curve is a distribution of a <strong>signed velocity component</strong>. The 2D and 3D curves are distributions of the <strong>non-negative magnitude</strong>, or speed. This is why their shapes differ. All three plots should have <em>probability density</em> on the vertical axis.</p>
+</section>
+<section id="two-dimensions-the-polar-coordinate-jacobian" class="level3" data-number="4.11.2">
+<h3 data-number="4.11.2" class="anchored" data-anchor-id="two-dimensions-the-polar-coordinate-jacobian"><span class="header-section-number">4.11.2</span> Two dimensions: the polar-coordinate Jacobian</h3>
+<p>The joint Cartesian velocity density is</p>
+<p><span class="math display">\[
+p(v_x,v_y)=\frac{m}{2\pi k_{\mathrm B}T}
+\exp\!\left[-\frac{m(v_x^2+v_y^2)}{2k_{\mathrm B}T}\right].
+\]</span></p>
+<p>Introduce polar coordinates in velocity space:</p>
+<p><span class="math display">\[
+v_x=c\cos\theta,\qquad v_y=c\sin\theta.
+\]</span></p>
+<p>The Jacobian matrix is</p>
+<p><span class="math display">\[
+J=\begin{pmatrix}
+\partial v_x/\partial c &amp; \partial v_x/\partial\theta\\
+\partial v_y/\partial c &amp; \partial v_y/\partial\theta
+\end{pmatrix}
+=\begin{pmatrix}
+\cos\theta &amp; -c\sin\theta\\
+\sin\theta &amp; c\cos\theta
+\end{pmatrix}.
+\]</span></p>
+<p>Its determinant is <span class="math inline">\(\det J=c\)</span>, hence</p>
+<p><span class="math display">\[
+\boxed{dv_x\,dv_y=c\,dc\,d\theta.}
+\]</span></p>
+<p>The factor <span class="math inline">\(c\)</span> converts an infinitesimal rectangle in the coordinates <span class="math inline">\((c,\theta)\)</span> into the corresponding annular sector in <span class="math inline">\((v_x,v_y)\)</span>. Integrating over the full angle gives</p>
+<p><span class="math display">\[
+\int_0^{2\pi}c\,dc\,d\theta=2\pi c\,dc.
+\]</span></p>
+<p>The 2D speed density is therefore</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_{2\mathrm D}(c)
+&amp;=\int_0^{2\pi}p(c\cos\theta,c\sin\theta)c\,d\theta\\
+&amp;=\frac{m}{k_{\mathrm B}T}c\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right).
+\end{aligned}
+\]</span></p>
+</section>
+<section id="three-dimensions-the-spherical-polar-volume-element" class="level3" data-number="4.11.3">
+<h3 data-number="4.11.3" class="anchored" data-anchor-id="three-dimensions-the-spherical-polar-volume-element"><span class="header-section-number">4.11.3</span> Three dimensions: the spherical-polar volume element</h3>
+<p>In three-dimensional velocity space, write</p>
+<p><span class="math display">\[
+v_x=c\sin\theta\cos\phi,\qquad
+v_y=c\sin\theta\sin\phi,\qquad
+v_z=c\cos\theta.
+\]</span></p>
+<p>The corresponding volume element is</p>
+<p><span class="math display">\[
+\boxed{dv_x\,dv_y\,dv_z=c^2\sin\theta\,dc\,d\theta\,d\phi.}
+\]</span></p>
+<p>Here <span class="math inline">\(0\leq\theta\leq\pi\)</span> and <span class="math inline">\(0\leq\phi&lt;2\pi\)</span>. Integrating over the two angles gives</p>
+<p><span class="math display">\[
+\int_0^{2\pi}d\phi\int_0^\pi\sin\theta\,d\theta=4\pi.
+\]</span></p>
+<p>Therefore a spherical shell of radial thickness <span class="math inline">\(dc\)</span> has volume <span class="math inline">\(4\pi c^2dc\)</span>, and</p>
+<p><span class="math display">\[
+\begin{aligned}
+f_{3\mathrm D}(c)
+&amp;=\int_0^{2\pi}\!\int_0^\pi p(c,\theta,\phi)c^2\sin\theta\,d\theta\,d\phi\\
+&amp;=4\pi\left(\frac{m}{2\pi k_{\mathrm B}T}\right)^{3/2}
+c^2\exp\!\left(-\frac{mc^2}{2k_{\mathrm B}T}\right).
+\end{aligned}
+\]</span></p>
+</section>
+<section id="why-a-larger-circle-does-not-have-more-points" class="level3" data-number="4.11.4">
+<h3 data-number="4.11.4" class="anchored" data-anchor-id="why-a-larger-circle-does-not-have-more-points"><span class="header-section-number">4.11.4</span> Why a larger circle does not have “more points”</h3>
+<p>Every circle has infinitely many points, and circles of different radii can be placed in one-to-one correspondence. It is therefore misleading to justify the speed distribution by saying that a larger circle contains <em>more individual points</em>. The physically relevant quantity is the <strong>area of a finite-width annulus</strong>, or the <strong>volume of a finite-thickness spherical shell</strong>. Those quantities increase with radius, and the Jacobian factors <span class="math inline">\(c\)</span> and <span class="math inline">\(c^2\sin\theta\)</span> describe precisely how the continuous probability measure transforms.</p>
+<p>The familiar circumference and surface-area arguments in the main chapter are thus the geometrical versions of the same rigorous change-of-variables calculation.</p>
+</section>
+<section id="optional-appendix-problem" class="level3" data-number="4.11.5">
+<h3 data-number="4.11.5" class="anchored" data-anchor-id="optional-appendix-problem"><span class="header-section-number">4.11.5</span> Optional appendix problem</h3>
+<p>Starting from the Cartesian joint density <span class="math inline">\(p(v_x,v_y)\)</span>, transform to polar coordinates and verify explicitly that <span class="math inline">\(\int_0^\infty f_{2\mathrm D}(c)\,dc=1\)</span>. Explain why the factor <span class="math inline">\(c\)</span> is necessary for this normalisation.</p>
+</section>
+</section>
+<section id="further-reading" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="further-reading"><span class="header-section-number">4.12</span> Further reading</h2>
 <p>For the statistical-mechanical background, consult the sections on the Boltzmann distribution, ideal gases and molecular speeds in Blundell &amp; Blundell, <em>Concepts in Thermal Physics</em>, or Kittel &amp; Kroemer, <em>Thermal Physics</em>.</p>
 
 
